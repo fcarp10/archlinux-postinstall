@@ -1,0 +1,17 @@
+[Unit]
+Description=nebula
+Wants=basic.target
+After=network.target
+Before=sshd.service
+
+[Service]
+SyslogIdentifier=nebula
+StandardOutput=syslog
+StandardError=syslog
+ExecStartPre=/bin/sleep 30
+ExecReload=/bin/kill -HUP $MAINPID
+ExecStart=/etc/nebula/nebula -config /etc/nebula/config.yml
+Restart=always
+
+[Install]
+WantedBy=multi-user.target

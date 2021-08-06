@@ -1,0 +1,15 @@
+##### login manager #####
+sddm
+
+##### audio #####
+pipewire
+pipewire-media-session
+
+## laptop ##
+tlp
+brightnessctl
+
+## bluetooth ##
+bluez
+bluez-libs
+bluez-utils

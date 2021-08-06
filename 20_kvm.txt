@@ -1,0 +1,8 @@
+virt-manager
+qemu
+qemu-arch-extra
+vde2
+ebtables
+dnsmasq
+bridge-utils
+openbsd-netcat

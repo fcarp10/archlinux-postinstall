@@ -1,0 +1,86 @@
+##### browsers #####
+firefox
+browserpass
+browserpass-firefox
+chromium
+torbrowser-launcher
+
+##### chat #####
+mailspring
+telegram-desktop
+slack-desktop
+
+##### file manager #####
+thunar
+
+##### file sync #####
+nextcloud-client
+syncthing
+transmission-gtk
+
+##### audio/video #####
+celluloid
+nomacs
+
+##### utils #####
+libinput-gesture
+xreader
+aur/pamac-aur
+rpi-imager
+file-roller
+gnome-screenshot
+gnome-keyring
+baobab
+drawio-desktop-bin
+onlyoffice
+jabref
+
+##### dev #####
+vscodium-bin
+vscodium-bin-marketplace
+jdk-openjdk
+pyenv
+docker
+
+##### appearance #####
+ttf-meslo-nerd-font-powerlevel10k
+numix-gtk-theme-git
+material-black-colors-theme
+
+##### texlive #####
+texlive-bibtexextra
+texlive-bin
+texlive-core
+texlive-fontsextra
+texlive-formatsextra
+texlive-latexextra
+texlive-pictures
+texlive-publishers
+texlive-science
+
+##### terminal/shell #####
+alacritty
+zsh
+zsh-autosuggestions
+zsh-completions
+zsh-syntax-highlighting
+zsh-theme-powerlevel10k
+bash-completion
+
+##### cli utils #####
+downgrade
+duf-bin
+bashtop
+htop
+neofetch
+pass
+pass-otp
+gvfs
+zip
+unrar
+p7zip
+keychain
+
+##### fonts #####
+ttf-roboto
+ttf-roboto-mono

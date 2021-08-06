@@ -1,0 +1,8 @@
+cups
+cups-pdf
+ghostscript
+gsfonts
+gutenprint
+gtk3-print-backends
+libcups
+system-config-printer

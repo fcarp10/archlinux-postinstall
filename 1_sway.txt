@@ -1,0 +1,8 @@
+##### sway/wayland #####
+sway
+waybar
+swaylock
+swayidle
+wofi
+xdg-desktop-portal-wlr
+
