@@ -99,7 +99,6 @@ while [ "$1" != "" ]; do
     -p)
         log "INFO" "installing paru... please wait"
         # install paru
-        sudo pacman -S --noconfirm --needed git
         git clone https://aur.archlinux.org/paru.git
         cd paru || exit
         makepkg -si
