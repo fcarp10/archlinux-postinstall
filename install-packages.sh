@@ -99,7 +99,6 @@ while [ "$1" != "" ]; do
     -p)
         log "INFO" "installing paru... please wait"
         # install paru
-        sudo pacman -S --noconfirm --needed git
         git clone https://aur.archlinux.org/paru.git
         cd paru || exit
         makepkg -si
@@ -122,6 +121,20 @@ while [ "$1" != "" ]; do
         sudo systemctl start docker
         sudo usermod -aG docker "$USER"
         newgrp docker
+        # copy env vars
+        sudo cp environment/environment /etc/environment
+        # copy grub theme
+        sudo cp -r grub/themes/Vimix /boot/grub/themes/
+        # copy sddm theme
+        sudo cp sddm/theme.conf /usr/share/sddm/themes/sugar-candy/theme.conf
+        sudo cp sddm/sddm.conf /etc/sddm.conf
+        # copy nebula service
+        sudo cp services/nebula.service /etc/systemd/system/nebula.service
+        # install vscodium extensions
+        cat vscodium/extensions.txt | while read y; do
+            [[ $y =~ ^#.* ]] && continue
+            vscodium --install-extension $y
+        done
         log "INFO" "done"
         ;;
     -h)
@@ -133,4 +146,5 @@ while [ "$1" != "" ]; do
         exit 0
         ;;
     esac
+    shift
 done

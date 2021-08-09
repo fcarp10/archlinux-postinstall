@@ -44,8 +44,9 @@ docker
 
 ##### appearance #####
 ttf-meslo-nerd-font-powerlevel10k
-numix-gtk-theme-git
+numix-icon-theme-git
 material-black-colors-theme
+breeze-default-cursor-theme
 
 ##### texlive #####
 texlive-bibtexextra
