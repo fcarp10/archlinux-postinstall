@@ -3,11 +3,14 @@ sddm
 sddm-sugar-candy-git
 
 ##### audio #####
-pipewire
-pipewire-media-session
-pipewire-pulse
-pipewire-alsa
+pulseaudio
+pulseaudio-alsa
 pavucontrol
+sof-firmware
+alsa-ucm-conf
+alsa-utils
+alsa-firmware
+pamixer
 
 ##### laptop #####
 tlp
