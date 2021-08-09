@@ -81,6 +81,7 @@ zip
 unrar
 p7zip
 keychain
+os-prober
 
 ##### fonts #####
 ttf-roboto

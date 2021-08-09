@@ -5,12 +5,21 @@ sddm-sugar-candy-git
 ##### audio #####
 pipewire
 pipewire-media-session
+pipewire-pulse
+pipewire-alsa
+pavucontrol
 
-## laptop ##
+##### laptop #####
 tlp
 brightnessctl
 
-## bluetooth ##
+##### bluetooth #####
 bluez
 bluez-libs
 bluez-utils
+
+##### missing firmware #####
+aic94xx-firmware
+wd719x-firmware
+upd72020x-fw
+
