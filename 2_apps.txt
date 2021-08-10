@@ -23,13 +23,13 @@ celluloid
 nomacs
 
 ##### utils #####
-libinput-gesture
 xreader
 aur/pamac-aur
 rpi-imager
 file-roller
 gnome-screenshot
 gnome-keyring
+polkit-gnome
 baobab
 drawio-desktop-bin
 onlyoffice

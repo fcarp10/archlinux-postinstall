@@ -11,15 +11,20 @@ alsa-ucm-conf
 alsa-utils
 alsa-firmware
 pamixer
+pulseaudio-bluetooth
 
 ##### laptop #####
 tlp
 brightnessctl
+wmctrl 
+xdotool
+libinput-gestures
 
 ##### bluetooth #####
 bluez
 bluez-libs
 bluez-utils
+blueman
 
 ##### missing firmware #####
 aic94xx-firmware
