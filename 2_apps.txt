@@ -5,7 +5,8 @@ browserpass-firefox
 chromium
 torbrowser-launcher
 
-##### chat #####
+##### mail/chat #####
+aerc
 mailspring
 telegram-desktop
 slack-desktop
@@ -18,7 +19,7 @@ nextcloud-client
 syncthing
 transmission-gtk
 
-##### audio/video #####
+##### photo/audio/video #####
 celluloid
 nomacs
 
@@ -82,6 +83,8 @@ unrar
 p7zip
 keychain
 os-prober
+grim
+slurp
 
 ##### fonts #####
 ttf-roboto
