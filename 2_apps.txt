@@ -86,6 +86,7 @@ keychain
 os-prober
 grim
 slurp
+dell-command-configure
 
 ##### fonts #####
 ttf-roboto
