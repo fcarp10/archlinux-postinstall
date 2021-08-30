@@ -6,8 +6,7 @@ chromium
 torbrowser-launcher
 
 ##### mail/chat #####
-aerc
-mailspring
+thunderbird-bin
 telegram-desktop
 slack-desktop
 
