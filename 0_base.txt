@@ -3,15 +3,13 @@ sddm
 sddm-sugar-candy-git
 
 ##### audio #####
-pulseaudio
-pulseaudio-alsa
+pipewire-pulse
 pavucontrol
 sof-firmware
 alsa-ucm-conf
 alsa-utils
 alsa-firmware
 pamixer
-pulseaudio-bluetooth
 
 ##### laptop #####
 tlp
