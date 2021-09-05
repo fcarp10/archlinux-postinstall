@@ -3,12 +3,14 @@ firefox
 browserpass
 browserpass-firefox
 chromium
+brave-bin
 torbrowser-launcher
 
 ##### mail/chat #####
 thunderbird-bin
 telegram-desktop
 slack-desktop
+signal-desktop
 
 ##### file manager #####
 thunar
@@ -24,6 +26,7 @@ nomacs
 
 ##### utils #####
 xreader
+pdftk
 aur/pamac-aur
 rpi-imager
 file-roller
