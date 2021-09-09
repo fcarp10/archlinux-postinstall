@@ -25,17 +25,18 @@ celluloid
 nomacs
 
 ##### utils #####
-xreader
+zathura-pdf-mupdf
 pdftk
 aur/pamac-aur
 rpi-imager
 file-roller
-gnome-screenshot
 gnome-keyring
 polkit-gnome
 baobab
 drawio-desktop-bin
-onlyoffice
+libreoffice-fresh
+hunspell
+hunspell-en_us
 jabref
 
 ##### dev #####
