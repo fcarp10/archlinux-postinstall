@@ -135,8 +135,9 @@ while [ "$1" != "" ]; do
             [[ $y =~ ^#.* ]] && continue
             vscodium --install-extension $y
         done
-        # start ibinput-gestures service
-        libinput-gestures-setup autostart start
+        # libinput-gestures config
+        sudo gpasswd -a $USER input
+        libinput-gestures-setup desktop
         log "INFO" "done"
         ;;
     -h)
