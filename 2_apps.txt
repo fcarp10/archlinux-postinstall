@@ -8,8 +8,9 @@ torbrowser-launcher
 
 ##### mail/chat #####
 thunderbird
+thunderbird-dark-reader
 telegram-desktop
-slack-desktop
+element-desktop
 signal-desktop
 
 ##### file manager #####
