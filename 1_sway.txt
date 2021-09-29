@@ -8,4 +8,5 @@ xdg-desktop-portal
 xdg-desktop-portal-wlr
 network-manager-applet
 libpipewire02
+mako
 

@@ -7,7 +7,7 @@ brave-bin
 torbrowser-launcher
 
 ##### mail/chat #####
-thunderbird-bin
+thunderbird
 telegram-desktop
 slack-desktop
 signal-desktop
