@@ -1,6 +1,5 @@
 ##### login manager #####
-sddm
-sddm-sugar-candy-git
+greetd
 
 ##### audio #####
 pipewire-pulse

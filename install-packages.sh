@@ -62,7 +62,7 @@ while [ "$1" != "" ]; do
         sudo systemctl enable bluetooth.service
         sudo systemctl start bluetooth.service
         sudo sed -i 's|#AutoEnable=false|AutoEnable=true|g' /etc/bluetooth/main.conf
-        sudo systemctl enable sddm.service -f
+        sudo systemctl enable greetd.service -f
         log "INFO" "done"
         ;;
     -s)
@@ -125,9 +125,6 @@ while [ "$1" != "" ]; do
         sudo cp environment/environment /etc/environment
         # copy grub theme
         sudo cp -r grub/themes/Vimix /boot/grub/themes/
-        # copy sddm theme
-        sudo cp sddm/theme.conf /usr/share/sddm/themes/sugar-candy/theme.conf
-        sudo cp sddm/sddm.conf /etc/sddm.conf
         # copy nebula service
         sudo cp services/nebula.service /etc/systemd/system/nebula.service
         # install vscodium extensions
