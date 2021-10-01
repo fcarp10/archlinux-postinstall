@@ -49,7 +49,7 @@ docker
 
 ##### appearance #####
 ttf-meslo-nerd-font-powerlevel10k
-numix-icon-theme-git
+vimix-icon-theme
 material-black-colors-theme
 breeze-default-cursor-theme
 qt5ct
