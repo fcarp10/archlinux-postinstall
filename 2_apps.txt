@@ -92,6 +92,7 @@ os-prober
 grim
 slurp
 dell-command-configure
+wl-clipboard
 
 ##### fonts #####
 ttf-roboto
