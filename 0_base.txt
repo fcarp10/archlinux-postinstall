@@ -1,7 +1,6 @@
-##### login manager #####
-greetd
-
+#################
 ##### audio #####
+#################
 pipewire-pulse
 pavucontrol
 sof-firmware
@@ -10,7 +9,10 @@ alsa-utils
 alsa-firmware
 pamixer
 
+
+##################
 ##### laptop #####
+##################
 tlp
 brightnessctl
 wmctrl 
@@ -18,14 +20,20 @@ xdotool
 libinput-gestures
 libinput-three-finger-drag
 
+
+#####################
 ##### bluetooth #####
+#####################
 bluez
 bluez-libs
 bluez-utils
 blueman
 
+
+############################
 ##### missing firmware #####
-aic94xx-firmware
-wd719x-firmware
-upd72020x-fw
+############################
+# aic94xx-firmware
+# wd719x-firmware
+# upd72020x-fw
 

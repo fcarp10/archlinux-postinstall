@@ -1,61 +1,52 @@
+####################
 ##### browsers #####
+####################
 firefox
-browserpass
-browserpass-firefox
 chromium
 brave-bin
 torbrowser-launcher
 
-##### mail/chat #####
+
+####################
+##### mail/chat ####
+####################
 thunderbird
 thunderbird-dark-reader
 telegram-desktop
 element-desktop
 signal-desktop
 
-##### file manager #####
-thunar
 
+#####################
 ##### file sync #####
+#####################
 nextcloud-client
 syncthing
 transmission-gtk
 
+
+#############################
 ##### photo/audio/video #####
+#############################
 celluloid
 nomacs
 
-##### utils #####
-zathura-pdf-mupdf
-pdftk
-aur/pamac-aur
-rpi-imager
+
+#################
+##### files #####
+#################
+thunar
 file-roller
-gnome-keyring
-polkit-gnome
-baobab
-drawio-desktop-bin
+zathura-pdf-mupdf
+
+
+##########################
+##### office/texlive #####
+##########################
 libreoffice-fresh
 hunspell
 hunspell-en_us
 jabref
-
-##### dev #####
-vscodium-bin
-vscodium-bin-marketplace
-jdk-openjdk
-pyenv
-docker
-
-##### appearance #####
-ttf-meslo-nerd-font-powerlevel10k
-vimix-icon-theme
-material-black-colors-theme
-breeze-default-cursor-theme
-qt5ct
-adwaita-qt
-
-##### texlive #####
 texlive-bibtexextra
 texlive-bin
 texlive-core
@@ -66,7 +57,31 @@ texlive-pictures
 texlive-publishers
 texlive-science
 
+
+###############
+##### dev #####
+###############
+vscodium-bin
+vscodium-bin-marketplace
+jdk-openjdk
+pyenv
+docker
+
+
+######################
+##### appearance #####
+######################
+ttf-meslo-nerd-font-powerlevel10k
+vimix-icon-theme
+material-black-colors-theme
+breeze-default-cursor-theme
+qt5ct
+adwaita-qt
+
+
+##########################
 ##### terminal/shell #####
+##########################
 alacritty
 zsh
 zsh-autosuggestions
@@ -75,14 +90,26 @@ zsh-syntax-highlighting
 zsh-theme-powerlevel10k
 bash-completion
 
+
+#####################
+##### gui utils #####
+#####################
+aur/pamac-aur
+rpi-imager
+gnome-keyring
+polkit-gnome
+baobab
+drawio-desktop-bin
+
+
+#####################
 ##### cli utils #####
+#####################
 downgrade
 duf-bin
 bashtop
 htop
 neofetch
-pass
-pass-otp
 gvfs
 zip
 unrar
@@ -91,9 +118,23 @@ keychain
 os-prober
 grim
 slurp
+pdftk
 dell-command-configure
-wl-clipboard
 
+
+################
+##### pass #####
+################
+browserpass
+browserpass-firefox
+pass
+pass-otp
+wl-clipboard
+pinentry
+
+
+#################
 ##### fonts #####
+#################
 ttf-roboto
 ttf-roboto-mono

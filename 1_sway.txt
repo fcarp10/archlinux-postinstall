@@ -1,4 +1,3 @@
-##### sway/wayland #####
 sway
 waybar
 swaylock
@@ -9,4 +8,4 @@ xdg-desktop-portal-wlr
 network-manager-applet
 libpipewire02
 mako
-
+greetd
