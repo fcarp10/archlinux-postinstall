@@ -119,6 +119,7 @@ os-prober
 grim
 slurp
 pdftk
+pdfpc
 dell-command-configure
 
 
