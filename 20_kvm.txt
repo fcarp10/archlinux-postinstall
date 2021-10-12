@@ -7,4 +7,6 @@ dnsmasq
 bridge-utils
 openbsd-netcat
 edk2-ovmf
-firewalld
+ebtables
+iptables
+dnsmasq
