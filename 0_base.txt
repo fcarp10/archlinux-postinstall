@@ -13,7 +13,8 @@ pamixer
 ##################
 ##### laptop #####
 ##################
-tlp
+## tlp
+auto-cpufreq
 brightnessctl
 wmctrl 
 xdotool

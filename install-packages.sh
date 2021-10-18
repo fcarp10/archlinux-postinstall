@@ -58,7 +58,8 @@ while [ "$1" != "" ]; do
         cat <0_base.txt | while read -r y; do
             install_package "$y"
         done
-        sudo systemctl enable tlp.service
+        # sudo systemctl enable tlp.service
+        sudo systemctl enable auto-cpufreq.service
         sudo systemctl enable bluetooth.service
         sudo systemctl start bluetooth.service
         sudo sed -i 's|#AutoEnable=false|AutoEnable=true|g' /etc/bluetooth/main.conf
