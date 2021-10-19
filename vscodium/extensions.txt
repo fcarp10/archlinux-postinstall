@@ -1,10 +1,9 @@
-## themes ##
-equinusocio.vsc-material-theme-icons
-ryolambertdev.monokai-neon
-PKief.material-product-icons
+#########
 ## dev ##
+#########
 streetsidesoftware.code-spell-checker
 ms-python.python
+ms-python.vscode-pylance
 ms-toolsai.jupyter
 redhat.java
 vscjava.vscode-java-debug
@@ -12,11 +11,21 @@ vscjava.vscode-java-test
 vscjava.vscode-maven
 foxundermoon.shell-format
 timonwong.shellcheck
-## latex ##
+###########
+## docs ##
+###########
 James-Yu.latex-workshop
 stkb.rewrap
-## others ##
 yzhang.markdown-all-in-one
 randomfractalsinc.vscode-data-preview
+############
+## themes ##
+############
+equinusocio.vsc-material-theme-icons
+s3gf4ult.monokai-vibrant
+PKief.material-product-icons
+############
+## others ##
+############
 kruemelkatze.vscode-dashboard
 kirozen.wordcounter
