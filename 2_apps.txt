@@ -105,6 +105,8 @@ drawio-desktop-bin
 #####################
 ##### cli utils #####
 #####################
+curl
+jq
 downgrade
 duf-bin
 bashtop
