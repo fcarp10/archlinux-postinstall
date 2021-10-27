@@ -75,7 +75,7 @@ docker
 ######################
 ttf-meslo-nerd-font-powerlevel10k
 vimix-icon-theme
-material-black-colors-theme
+materia-gtk-theme
 breeze-default-cursor-theme
 qt5ct
 adwaita-qt
