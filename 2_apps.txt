@@ -17,12 +17,14 @@ element-desktop
 signal-desktop
 
 
-#####################
-##### file sync #####
-#####################
+########################
+##### network/sync #####
+########################
 nextcloud-client
 syncthing
 transmission-gtk
+nebula
+openconnect
 
 
 #############################
