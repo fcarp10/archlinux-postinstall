@@ -2,9 +2,9 @@
 ##### browsers #####
 ####################
 firefox
-chromium
 brave-bin
 torbrowser-launcher
+tangram
 
 
 ####################
@@ -94,7 +94,7 @@ bash-completion
 #####################
 ##### gui utils #####
 #####################
-aur/pamac-aur
+pamac-aur
 rpi-imager
 gnome-keyring
 polkit-gnome
