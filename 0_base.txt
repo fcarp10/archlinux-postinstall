@@ -28,7 +28,7 @@ libinput-three-finger-drag
 bluez
 bluez-libs
 bluez-utils
-blueman
+blueberry
 
 
 ############################
