@@ -58,6 +58,7 @@ texlive-latexextra
 texlive-pictures
 texlive-publishers
 texlive-science
+gedit
 
 
 ###############
