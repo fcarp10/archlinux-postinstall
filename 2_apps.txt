@@ -144,3 +144,4 @@ pinentry
 #################
 ttf-roboto
 ttf-roboto-mono
+ttf-font-awesome
