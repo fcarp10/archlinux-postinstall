@@ -125,6 +125,7 @@ grim
 slurp
 pdftk
 pdfpc
+joshuto
 dell-command-configure
 
 
