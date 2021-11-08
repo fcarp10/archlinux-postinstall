@@ -126,8 +126,6 @@ while [ "$1" != "" ]; do
         sudo cp environment/environment /etc/environment
         # copy grub theme
         sudo cp -r grub/themes/Vimix /boot/grub/themes/
-        # copy nebula service
-        sudo cp services/nebula.service /etc/systemd/system/nebula.service
         # install vscodium extensions
         cat vscodium/extensions.txt | while read y; do
             [[ $y =~ ^#.* ]] && continue

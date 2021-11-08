@@ -33,6 +33,7 @@ openconnect
 celluloid
 nomacs
 lollypop
+rhythmbox
 
 
 #################
@@ -126,6 +127,7 @@ grim
 slurp
 pdftk
 pdfpc
+joshuto
 dell-command-configure
 cmatrix
 
