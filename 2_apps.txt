@@ -32,6 +32,7 @@ openconnect
 #############################
 celluloid
 nomacs
+lollypop
 
 
 #################
