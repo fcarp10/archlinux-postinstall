@@ -33,6 +33,7 @@ openconnect
 celluloid
 nomacs
 lollypop
+rhythmbox
 
 
 #################
