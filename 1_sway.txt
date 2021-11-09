@@ -10,3 +10,4 @@ libpipewire02
 mako
 greetd
 autotiling
+wob
