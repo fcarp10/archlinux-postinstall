@@ -134,6 +134,8 @@ while [ "$1" != "" ]; do
         # libinput-gestures config
         sudo gpasswd -a $USER input
         libinput-gestures-setup desktop
+        # start wob service
+        systemctl enable --now --user wob.socket
         log "INFO" "done"
         ;;
     -h)
