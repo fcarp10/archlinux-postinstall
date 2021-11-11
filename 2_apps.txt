@@ -14,7 +14,6 @@ thunderbird
 thunderbird-dark-reader
 telegram-desktop
 element-desktop
-signal-desktop
 
 
 ########################
