@@ -44,8 +44,9 @@ OPTIONS:
 -b \t Installs base packages.
 -s \t Installs sway packages.
 -a \t Installs apps.
--p \t Installs printers packages.
+-t \t Installs printers packages.
 -k \t Installs and configures kvm.
+-p \t Installs paru.
 -c \t Apply configuration.
 -h \t Shows available options.
 Only one option is allowed.
@@ -100,6 +101,7 @@ while [ "$1" != "" ]; do
     -p)
         log "INFO" "installing paru... please wait"
         # install paru
+        sudo pacman -S --needed base-devel
         git clone https://aur.archlinux.org/paru.git
         cd paru || exit
         makepkg -si

@@ -129,6 +129,8 @@ pdfpc
 joshuto
 dell-command-configure
 cmatrix
+exfatprogs
+rsync
 
 ################
 ##### pass #####
