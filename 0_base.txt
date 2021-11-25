@@ -18,7 +18,6 @@ auto-cpufreq
 brightnessctl
 wmctrl 
 xdotool
-libinput-gestures
 libinput-three-finger-drag
 
 

@@ -14,7 +14,6 @@ thunderbird
 thunderbird-dark-reader
 telegram-desktop
 element-desktop
-signal-desktop
 
 
 ########################
@@ -80,6 +79,7 @@ docker
 ttf-meslo-nerd-font-powerlevel10k
 vimix-icon-theme
 materia-gtk-theme
+skeuos-gtk
 breeze-default-cursor-theme
 qt5ct
 adwaita-qt
@@ -130,7 +130,9 @@ pdftk
 pdfpc
 joshuto
 dell-command-configure
-
+cmatrix
+exfatprogs
+rsync
 
 ################
 ##### pass #####

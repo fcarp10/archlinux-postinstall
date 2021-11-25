@@ -9,4 +9,5 @@ network-manager-applet
 libpipewire02
 mako
 greetd
-autotiling
+wob
+sworkstyle
