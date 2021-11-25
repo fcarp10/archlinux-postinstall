@@ -21,6 +21,7 @@ OPTIONS:
 -a \t Installs apps.
 -p \t Installs printers packages.
 -k \t Installs and configures kvm.
+-p \t Installs paru.
 -c \t Apply configuration.
 -h \t Shows available options.
 Only one option is allowed.
