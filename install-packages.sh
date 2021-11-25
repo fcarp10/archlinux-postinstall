@@ -123,7 +123,7 @@ while [ "$1" != "" ]; do
         sudo usermod -aG docker "$USER"
         newgrp docker
         # copy env vars
-        sudo cp environment/environment /etc/environment
+        sudo cp etc/environment /etc/environment
         # copy grub theme
         sudo cp -r grub/themes/Vimix /boot/grub/themes/
         # install vscodium extensions

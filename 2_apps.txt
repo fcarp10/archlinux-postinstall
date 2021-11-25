@@ -4,7 +4,7 @@
 firefox
 brave-bin
 torbrowser-launcher
-tangram
+ferdi
 
 
 ####################
@@ -60,6 +60,7 @@ texlive-latexextra
 texlive-pictures
 texlive-publishers
 texlive-science
+tllocalmgr-git
 gedit
 
 
