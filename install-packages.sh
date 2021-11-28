@@ -127,9 +127,9 @@ while [ "$1" != "" ]; do
         # copy env vars
         sudo cp etc/environment /etc/environment
         # copy grub theme
-        sudo cp -r grub/themes/Vimix /boot/grub/themes/
+        sudo cp -r boot/grub/themes/Vimix /boot/grub/themes/
         # install vscodium extensions
-        cat vscodium/extensions.txt | while read y; do
+        cat 30_vscodium.txt | while read y; do
             [[ $y =~ ^#.* ]] && continue
             vscodium --install-extension $y
         done
