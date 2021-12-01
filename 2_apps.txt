@@ -106,6 +106,7 @@ gnome-keyring
 polkit-gnome
 baobab
 drawio-desktop-bin
+gnome-disk-utility
 
 
 #####################
