@@ -78,7 +78,6 @@ docker
 ######################
 ttf-meslo-nerd-font-powerlevel10k
 vimix-icon-theme
-materia-gtk-theme
 skeuos-gtk
 breeze-default-cursor-theme
 qt5ct
