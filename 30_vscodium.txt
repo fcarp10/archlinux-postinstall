@@ -1,31 +1,62 @@
 #########
 ## dev ##
 #########
-streetsidesoftware.code-spell-checker
+### shell
+foxundermoon.shell-format
+timonwong.shellcheck
+### go
+golang.go
+### python
+ms-pyright.pyright
 ms-python.python
-ms-python.vscode-pylance
-ms-toolsai.jupyter
+### c
+ms-vscode.cpptools
+### arduino
+platformio.platformio-ide
+### java
 redhat.java
 vscjava.vscode-java-debug
 vscjava.vscode-java-test
 vscjava.vscode-maven
-foxundermoon.shell-format
-timonwong.shellcheck
-###########
-## docs ##
-###########
-James-Yu.latex-workshop
-stkb.rewrap
+### markdown
 yzhang.markdown-all-in-one
-randomfractalsinc.vscode-data-preview
-############
-## themes ##
-############
+### latex
+James-Yu.latex-workshop
+### others
+streetsidesoftware.code-spell-checker
+VisualStudioExptTeam.vscodeintellicode
+
+
+#############
+## theming ##
+#############
 equinusocio.vsc-material-theme-icons
-s3gf4ult.monokai-vibrant
 PKief.material-product-icons
-############
-## others ##
-############
+s3gf4ult.monokai-vibrant
+
+
+#############
+## add-ons ##
+#############
+fabiospampinato.vscode-open-in-application
 kruemelkatze.vscode-dashboard
-kirozen.wordcounter
+stkb.rewrap
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

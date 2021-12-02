@@ -39,6 +39,7 @@ rhythmbox
 ##### files #####
 #################
 thunar
+thunar-archive-plugin
 file-roller
 zathura-pdf-mupdf
 
@@ -105,6 +106,7 @@ gnome-keyring
 polkit-gnome
 baobab
 drawio-desktop-bin
+gnome-disk-utility
 
 
 #####################
