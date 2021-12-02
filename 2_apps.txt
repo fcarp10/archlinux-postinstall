@@ -39,6 +39,7 @@ rhythmbox
 ##### files #####
 #################
 thunar
+thunar-archive-plugin
 file-roller
 zathura-pdf-mupdf
 
