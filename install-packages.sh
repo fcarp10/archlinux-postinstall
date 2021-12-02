@@ -126,8 +126,6 @@ while [ "$1" != "" ]; do
         newgrp docker
         # copy env vars
         sudo cp etc/environment /etc/environment
-        # copy grub theme
-        sudo cp -r boot/grub/themes/Vimix /boot/grub/themes/
         # install vscodium extensions
         cat 30_vscodium.txt | while read y; do
             if [[ $y != \#* ]] && [ -n "$y" ]; then
