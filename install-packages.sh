@@ -130,8 +130,9 @@ while [ "$1" != "" ]; do
         sudo cp -r boot/grub/themes/Vimix /boot/grub/themes/
         # install vscodium extensions
         cat 30_vscodium.txt | while read y; do
-            [[ $y =~ ^#.* ]] && continue
-            vscodium --install-extension $y
+            if [[ $y != \#* ]] && [ -n "$y" ]; then
+                vscodium --install-extension $y
+            fi
         done
         # libinput-gestures config
         sudo gpasswd -a $USER input
