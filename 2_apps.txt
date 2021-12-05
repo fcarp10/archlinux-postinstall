@@ -33,6 +33,7 @@ celluloid
 nomacs
 lollypop
 rhythmbox
+freetube-bin
 
 
 #################
@@ -107,6 +108,7 @@ polkit-gnome
 baobab
 drawio-desktop-bin
 gnome-disk-utility
+junction
 
 
 #####################
