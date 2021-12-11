@@ -3,8 +3,7 @@
 ####################
 firefox
 brave-bin
-torbrowser-launcher
-ferdi
+ferdi-bin
 
 
 ####################
@@ -12,7 +11,6 @@ ferdi
 ####################
 thunderbird
 thunderbird-dark-reader
-telegram-desktop
 element-desktop
 
 
@@ -51,7 +49,6 @@ zathura-pdf-mupdf
 libreoffice-fresh
 hunspell
 hunspell-en_us
-jabref
 texlive-bibtexextra
 texlive-bin
 texlive-core
@@ -117,7 +114,6 @@ curl
 jq
 downgrade
 duf-bin
-bashtop
 htop
 neofetch
 gvfs
@@ -125,7 +121,6 @@ zip
 unrar
 p7zip
 keychain
-os-prober
 grim
 slurp
 pdftk
@@ -140,7 +135,6 @@ rsync
 ##### pass #####
 ################
 browserpass
-browserpass-firefox
 pass
 pass-otp
 wl-clipboard
