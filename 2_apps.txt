@@ -32,6 +32,7 @@ nomacs
 lollypop
 rhythmbox
 freetube-bin
+shotwell
 
 
 #################
