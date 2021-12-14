@@ -99,7 +99,6 @@ bash-completion
 ##### gui utils #####
 #####################
 pamac-aur
-rpi-imager
 gnome-keyring
 polkit-gnome
 baobab
