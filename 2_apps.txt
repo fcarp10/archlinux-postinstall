@@ -82,6 +82,8 @@ skeuos-gtk
 breeze-default-cursor-theme
 qt5ct
 adwaita-qt
+qt5-wayland
+qt6-wayland
 
 
 ##########################

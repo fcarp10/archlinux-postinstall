@@ -47,6 +47,7 @@ OPTIONS:
 -t \t Installs printers packages.
 -k \t Installs and configures kvm.
 -p \t Installs paru.
+-d \t Installs vscodium extensions.
 -c \t Apply configuration.
 -h \t Shows available options.
 Only one option is allowed.
@@ -100,14 +101,21 @@ while [ "$1" != "" ]; do
 
     -p)
         log "INFO" "installing paru... please wait"
-        # install paru
         sudo pacman -S --needed base-devel
         git clone https://aur.archlinux.org/paru.git
         cd paru || exit
         makepkg -si
         log "INFO" "done"
         ;;
-
+    -d)
+        log "INFO" "installing vscodium extensions... please wait"
+        cat 30_vscodium.txt | while read y; do
+            if [[ $y != \#* ]] && [ -n "$y" ]; then
+                vscodium --install-extension $y
+            fi
+        done
+        log "INFO" "done"
+        ;;
     -c)
         log "INFO" "applying personal configuration... please wait"
         # change shell to zsh
@@ -120,18 +128,10 @@ while [ "$1" != "" ]; do
         git config credential.helper store
         git config --global credential.helper store
         # set up docker
-        sudo systemctl enable docker
-        sudo systemctl start docker
         sudo usermod -aG docker "$USER"
         newgrp docker
         # copy env vars
         sudo cp etc/environment /etc/environment
-        # install vscodium extensions
-        cat 30_vscodium.txt | while read y; do
-            if [[ $y != \#* ]] && [ -n "$y" ]; then
-                vscodium --install-extension $y
-            fi
-        done
         # libinput-gestures config
         sudo gpasswd -a $USER input
         libinput-gestures-setup desktop
