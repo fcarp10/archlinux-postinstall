@@ -12,6 +12,7 @@ ferdi-bin
 thunderbird
 thunderbird-dark-reader
 element-desktop
+signal-desktop
 
 
 ########################
