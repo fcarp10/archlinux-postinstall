@@ -134,6 +134,13 @@ while [ "$1" != "" ]; do
         git config --global user.email "carpiofj@gmail.com"
         git config credential.helper store
         git config --global credential.helper store
+        # clone dotfiles
+        echo "alias config='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'" >> $HOME/.bashrc
+        git clone --bare https://github.com/fcarp10/dotfiles.git $HOME/.dotfiles
+        exec "$SHELL"
+        config reset --hard
+        config checkout
+        config config --local status.showUntrackedFiles no
         log "INFO" "done"
         ;;
     -cd)
