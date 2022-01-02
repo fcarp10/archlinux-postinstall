@@ -44,11 +44,14 @@ OPTIONS:
 -b \t Installs base packages.
 -s \t Installs sway packages.
 -a \t Installs apps.
+-ma \t Installs mobile apps.
 -t \t Installs printers packages.
 -k \t Installs and configures kvm.
 -p \t Installs paru.
--d \t Installs vscodium extensions.
--c \t Apply configuration.
+-vs \t Installs vscodium extensions.
+-c \t Applies global configuration.
+-cd \t Applies desktop configuration.
+-cm \t Applies mobile configuration.
 -h \t Shows available options.
 Only one option is allowed.
 '
@@ -81,6 +84,12 @@ while [ "$1" != "" ]; do
         done
         log "INFO" "done"
         ;;
+    -ma)
+        cat <3_mobileapps.txt | while read -r y; do
+            install_package "$y"
+        done
+        log "INFO" "done"
+        ;;
     -t)
         log "INFO" "installing printers packages... please wait"
         cat <10_printers.txt | while read -r y; do
@@ -107,7 +116,7 @@ while [ "$1" != "" ]; do
         makepkg -si
         log "INFO" "done"
         ;;
-    -d)
+    -vs)
         log "INFO" "installing vscodium extensions... please wait"
         cat 30_vscodium.txt | while read y; do
             if [[ $y != \#* ]] && [ -n "$y" ]; then
@@ -117,26 +126,36 @@ while [ "$1" != "" ]; do
         log "INFO" "done"
         ;;
     -c)
-        log "INFO" "applying personal configuration... please wait"
+        log "INFO" "applying global configuration... please wait"
         # change shell to zsh
         chsh -s /usr/bin/zsh
-        # add pluging to pyenv
-        git clone https://github.com/pyenv/pyenv-virtualenv.git "$(pyenv root)"/plugins/pyenv-virtualenv
         # set up git
         git config --global user.name "Francisco Carpio"
         git config --global user.email "carpiofj@gmail.com"
         git config credential.helper store
         git config --global credential.helper store
+        log "INFO" "done"
+        ;;
+    -cd)
+        log "INFO" "applying desktop configuration... please wait"
+        # copy env vars
+        sudo cp desktop/etc/environment /etc/environment
+        # add pluging to pyenv
+        git clone https://github.com/pyenv/pyenv-virtualenv.git "$(pyenv root)"/plugins/pyenv-virtualenv
         # set up docker
         sudo usermod -aG docker "$USER"
         newgrp docker
-        # copy env vars
-        sudo cp etc/environment /etc/environment
-        # libinput-gestures config
+         # libinput-gestures config
         sudo gpasswd -a $USER input
         libinput-gestures-setup desktop
         # start wob service
         systemctl enable --now --user wob.socket
+        log "INFO" "done"
+        ;;
+    -cm)
+        log "INFO" "applying mobile configuration... please wait"
+        # copy env vars
+        sudo cp mobile/etc/environment /etc/environment
         log "INFO" "done"
         ;;
     -h)

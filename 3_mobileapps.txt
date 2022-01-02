@@ -2,89 +2,38 @@
 ##### browsers #####
 ####################
 firefox
-brave-bin
-ferdi-bin
+mobile-config-firefox
 
 
 ####################
 ##### mail/chat ####
 ####################
-thunderbird
-thunderbird-dark-reader
-element-desktop
-signal-desktop
-
-
-########################
-##### network/sync #####
-########################
-nextcloud-client
-syncthing
-transmission-gtk
-nebula
-openconnect
+geary
 
 
 #############################
 ##### photo/audio/video #####
 #############################
 celluloid
-nomacs
 lollypop
-rhythmbox
-freetube-bin
-shotwell
+eog
+gnome-podcasts
+kasts
+gnome-sound-recorder
 
 
 #################
 ##### files #####
 #################
-thunar
-thunar-archive-plugin
-file-roller
-zathura-pdf-mupdf
-
-
-##########################
-##### office/texlive #####
-##########################
-libreoffice-fresh
-hunspell
-hunspell-en_us
-texlive-bibtexextra
-texlive-bin
-texlive-core
-texlive-fontsextra
-texlive-formatsextra
-texlive-latexextra
-texlive-pictures
-texlive-publishers
-texlive-science
-tllocalmgr-git
-gedit
-
-
-###############
-##### dev #####
-###############
-vscodium-bin
-vscodium-bin-marketplace
-jdk-openjdk
-pyenv
-docker
+portfolio
 
 
 ######################
 ##### appearance #####
 ######################
 ttf-meslo-nerd-font-powerlevel10k
-vimix-icon-theme
-skeuos-gtk
-breeze-default-cursor-theme
 qt5ct
 adwaita-qt
-qt5-wayland
-qt6-wayland
 
 
 ##########################
@@ -103,39 +52,21 @@ bash-completion
 #####################
 ##### gui utils #####
 #####################
-pamac-aur
 gnome-keyring
 polkit-gnome
-baobab
-drawio-desktop-bin
-gnome-disk-utility
-junction
+danctnix-tweaks-app
+# danctnix-tweaks-app-phosh
+danctnix-tweaks-app-pinephone
 
 
 #####################
 ##### cli utils #####
 #####################
 curl
-jq
-downgrade
-duf-bin
-htop
 neofetch
-gvfs
-zip
-unrar
-p7zip
+htop
 keychain
-grim
-slurp
-pdftk
-pdfpc
-joshuto
-dell-command-configure
-cmatrix
-exfatprogs
-rsync
-rmlint
+pyenv
 
 
 ################
@@ -154,3 +85,15 @@ pinentry
 ttf-roboto
 ttf-roboto-mono
 ttf-font-awesome
+
+
+##################
+##### others #####
+##################
+gnome-weather
+gnome-todo
+dialect
+mousai
+whatip
+# waydroid-image
+# fluffychat-bin
