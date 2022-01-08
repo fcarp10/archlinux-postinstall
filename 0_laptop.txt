@@ -1,0 +1,9 @@
+##################
+##### laptop #####
+##################
+## tlp
+auto-cpufreq
+brightnessctl
+wmctrl 
+xdotool
+libinput-three-finger-drag

@@ -27,28 +27,35 @@ function log {
 }
 
 function install_package {
-    if [[ $1 != \#* ]] && [ -n "$1" ]; then
-        if paru -Qi "$1" &>/dev/null; then
-            log "WARN" "the package $1 is already installed"
-        else
-            log "INFO" "installing package $1"
-            paru -S --noconfirm --needed "$1"
+    log "INFO" "installing packages from $1 file, please wait..."
+    cat <"$1" | while read -r y; do
+        if [[ $y != \#* ]] && [ -n "$y" ]; then
+            if paru -Qi "$y" &>/dev/null; then
+                log "WARN" "the package $y is already installed"
+            else
+                log "INFO" "installing package $y"
+                paru -S --noconfirm --needed "$y"
+            fi
         fi
-    fi
+    done
+    log "INFO" "done"
 }
 
 usage='Usage:
 '$0' [OPTION]
 
 OPTIONS:
--b \t Installs base packages.
--s \t Installs sway packages.
+-ba \t Installs audio.
+-bb \t Installs bluetooth.
+-bl \t Installs laptop.
+-s \t Installs sway.
 -a \t Installs apps.
 -ma \t Installs mobile apps.
--t \t Installs printers packages.
--k \t Installs and configures kvm.
+-t \t Installs printers.
+-k \t Installs kvm.
 -p \t Installs paru.
 -vs \t Installs vscodium extensions.
+-g \t Installs gaming.
 -c \t Applies global configuration.
 -cd \t Applies desktop configuration.
 -cm \t Applies mobile configuration.
@@ -58,56 +65,52 @@ Only one option is allowed.
 
 while [ "$1" != "" ]; do
     case $1 in
-    -b)
-        log "INFO" "installing base packages... please wait"
-        cat <0_base.txt | while read -r y; do
-            install_package "$y"
-        done
-        # sudo systemctl enable tlp.service
-        sudo systemctl enable auto-cpufreq.service
+    -ba)
+        install_package 0_audio.txt
+        ;;
+    -bb)
+        install_package 0_bluetooth.txt
+        log "INFO" "enabling bluetooth service..."
         sudo systemctl enable bluetooth.service
         sudo systemctl start bluetooth.service
         sudo sed -i 's|#AutoEnable=false|AutoEnable=true|g' /etc/bluetooth/main.conf
-        sudo systemctl enable greetd.service -f
+        log "INFO" "done"
+        ;;
+    -bl)
+        install_package 0_laptop.txt
+        log "INFO" "enabling auto-cpufreq service..."
+        # sudo systemctl enable tlp.service
+        sudo systemctl enable auto-cpufreq.service
         log "INFO" "done"
         ;;
     -s)
-        log "INFO" "installing sway packages... please wait"
-        cat <1_sway.txt | while read -r y; do
-            install_package "$y"
-        done
-        ;;
-
-    -a)
-        cat <2_apps.txt | while read -r y; do
-            install_package "$y"
-        done
+        install_package 1_sway.txt
+        log "INFO" "enabling greetd service..."
+        sudo systemctl enable greetd.service -f
         log "INFO" "done"
+        ;;
+    -a)
+        install_package 2_apps.txt
         ;;
     -ma)
-        cat <3_mobileapps.txt | while read -r y; do
-            install_package "$y"
-        done
-        log "INFO" "done"
+        install_package 3_mobileapps.txt
         ;;
     -t)
-        log "INFO" "installing printers packages... please wait"
-        cat <10_printers.txt | while read -r y; do
-            install_package "$y"
-        done
+        install_package 10_printers.txt
+        log "INFO" "enabling org.cups.cupsd.service service..."
         sudo systemctl enable org.cups.cupsd.service
         log "INFO" "done"
         ;;
     -k)
-        log "INFO" "installing kvm packages... please wait"
-        cat <20_kvm.txt | while read -r y; do
-            install_package "$y"
-        done
+        install_package 20_kvm.txt
+        log "INFO" "enabling libvirtd service..."
         sudo systemctl enable libvirtd.service
         sudo systemctl start libvirtd.service
         log "INFO" "done"
         ;;
-
+    -g)
+        install_package 40_gaming.txt
+        ;;
     -p)
         log "INFO" "installing paru... please wait"
         sudo pacman -S --needed base-devel
@@ -135,7 +138,7 @@ while [ "$1" != "" ]; do
         git config credential.helper store
         git config --global credential.helper store
         # clone dotfiles
-        echo "alias config='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'" >> $HOME/.bashrc
+        echo "alias config='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'" >>$HOME/.bashrc
         git clone --bare https://github.com/fcarp10/dotfiles.git $HOME/.dotfiles
         exec "$SHELL"
         config reset --hard
@@ -152,7 +155,7 @@ while [ "$1" != "" ]; do
         # set up docker
         sudo usermod -aG docker "$USER"
         newgrp docker
-         # libinput-gestures config
+        # libinput-gestures config
         sudo gpasswd -a $USER input
         libinput-gestures-setup desktop
         # start wob service

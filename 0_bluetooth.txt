@@ -1,0 +1,9 @@
+#####################
+##### bluetooth #####
+#####################
+bluez
+bluez-libs
+bluez-utils
+blueberry
+
+

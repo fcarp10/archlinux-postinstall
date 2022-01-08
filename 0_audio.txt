@@ -1,0 +1,10 @@
+#################
+##### audio #####
+#################
+pipewire-pulse
+pavucontrol
+sof-firmware
+alsa-ucm-conf
+alsa-utils
+alsa-firmware
+pamixer
