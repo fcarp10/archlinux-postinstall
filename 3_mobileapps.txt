@@ -1,0 +1,99 @@
+####################
+##### browsers #####
+####################
+firefox
+mobile-config-firefox
+
+
+####################
+##### mail/chat ####
+####################
+geary
+
+
+#############################
+##### photo/audio/video #####
+#############################
+celluloid
+lollypop
+eog
+gnome-podcasts
+kasts
+gnome-sound-recorder
+
+
+#################
+##### files #####
+#################
+portfolio-file-manager
+
+
+######################
+##### appearance #####
+######################
+ttf-meslo-nerd-font-powerlevel10k
+qt5ct
+adwaita-qt
+
+
+##########################
+##### terminal/shell #####
+##########################
+foot
+zsh
+zsh-autosuggestions
+zsh-completions
+zsh-syntax-highlighting
+zsh-theme-powerlevel10k
+zsh-autocomplete
+bash-completion
+
+
+#####################
+##### gui utils #####
+#####################
+gnome-keyring
+polkit-gnome
+danctnix-tweaks-app
+# danctnix-tweaks-app-phosh
+danctnix-tweaks-app-pinephone
+
+
+#####################
+##### cli utils #####
+#####################
+curl
+neofetch
+htop
+keychain
+pyenv
+
+
+################
+##### pass #####
+################
+browserpass
+pass
+pass-otp
+wl-clipboard
+pinentry
+
+
+#################
+##### fonts #####
+#################
+ttf-roboto
+ttf-roboto-mono
+ttf-font-awesome
+
+
+##################
+##### others #####
+##################
+gnome-weather
+gnome-todo
+dialect
+mousai
+whatip
+# waydroid-image
+# fluffychat-bin

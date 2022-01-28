@@ -12,6 +12,7 @@ ferdi-bin
 thunderbird
 thunderbird-dark-reader
 element-desktop
+signal-desktop
 
 
 ########################
@@ -32,6 +33,7 @@ nomacs
 lollypop
 rhythmbox
 freetube-bin
+shotwell
 
 
 #################
@@ -81,17 +83,20 @@ skeuos-gtk
 breeze-default-cursor-theme
 qt5ct
 adwaita-qt
+qt5-wayland
+qt6-wayland
 
 
 ##########################
 ##### terminal/shell #####
 ##########################
-alacritty
+foot
 zsh
 zsh-autosuggestions
 zsh-completions
 zsh-syntax-highlighting
 zsh-theme-powerlevel10k
+zsh-autocomplete
 bash-completion
 
 
@@ -132,6 +137,7 @@ exfatprogs
 rsync
 rmlint
 khal
+
 
 ################
 ##### pass #####
