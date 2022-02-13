@@ -134,6 +134,7 @@ cmatrix
 exfatprogs
 rsync
 rmlint
+khal
 
 
 ################
