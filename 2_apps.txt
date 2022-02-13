@@ -23,6 +23,7 @@ syncthing
 transmission-gtk
 nebula
 openconnect
+remmina
 
 
 #############################
@@ -42,7 +43,6 @@ shotwell
 thunar
 thunar-archive-plugin
 file-roller
-zathura-pdf-mupdf
 
 
 ##########################
@@ -77,7 +77,6 @@ docker
 ######################
 ##### appearance #####
 ######################
-ttf-meslo-nerd-font-powerlevel10k
 vimix-icon-theme
 skeuos-gtk
 breeze-default-cursor-theme
@@ -130,7 +129,6 @@ grim
 slurp
 pdftk
 pdfpc
-joshuto
 dell-command-configure
 cmatrix
 exfatprogs
@@ -153,4 +151,5 @@ pinentry
 #################
 ttf-roboto
 ttf-roboto-mono
-ttf-font-awesome
+otf-font-awesome
+ttf-meslo-nerd-font-powerlevel10k
