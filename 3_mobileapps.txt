@@ -3,13 +3,17 @@
 ####################
 firefox
 mobile-config-firefox
+epiphany
 
 
-####################
-##### mail/chat ####
-####################
+#################
+##### social ####
+#################
 geary
-
+tootle
+cawbird
+telegram-desktop
+# fluffychat-bin
 
 #############################
 ##### photo/audio/video #####
@@ -18,22 +22,21 @@ celluloid
 lollypop
 eog
 gnome-podcasts
-kasts
 gnome-sound-recorder
-
 
 #################
 ##### files #####
 #################
 portfolio-file-manager
-
+evince-mobile
 
 ######################
 ##### appearance #####
 ######################
-ttf-meslo-nerd-font-powerlevel10k
-qt5ct
-adwaita-qt
+skeuos-gtk
+vimix-icon-theme
+# qt5ct
+# adwaita-qt
 
 
 ##########################
@@ -55,8 +58,9 @@ bash-completion
 gnome-keyring
 polkit-gnome
 danctnix-tweaks-app
-# danctnix-tweaks-app-phosh
+danctnix-tweaks-app-phosh
 danctnix-tweaks-app-pinephone
+phosh-antispam
 
 
 #####################
@@ -66,7 +70,6 @@ curl
 neofetch
 htop
 keychain
-pyenv
 
 
 ################
@@ -82,18 +85,19 @@ pinentry
 #################
 ##### fonts #####
 #################
-ttf-roboto
-ttf-roboto-mono
-ttf-font-awesome
+# ttf-roboto
+# ttf-roboto-mono
+ttf-meslo-nerd-font-powerlevel10k
 
 
 ##################
 ##### others #####
 ##################
 gnome-weather
-gnome-todo
 dialect
 mousai
 whatip
+newsflash
+# gnome-todo
+# gnome-calendar-mobile
 # waydroid-image
-# fluffychat-bin

@@ -6,9 +6,9 @@ brave-bin
 ferdi-bin
 
 
-####################
-##### mail/chat ####
-####################
+#################
+##### social ####
+#################
 thunderbird
 thunderbird-dark-reader
 element-desktop
