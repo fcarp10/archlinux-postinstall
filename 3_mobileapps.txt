@@ -15,6 +15,7 @@ cawbird
 telegram-desktop
 # fluffychat-bin
 
+
 #############################
 ##### photo/audio/video #####
 #############################
@@ -24,11 +25,13 @@ eog
 gnome-podcasts
 gnome-sound-recorder
 
+
 #################
 ##### files #####
 #################
 portfolio-file-manager
 evince-mobile
+
 
 ######################
 ##### appearance #####
@@ -58,9 +61,8 @@ bash-completion
 gnome-keyring
 polkit-gnome
 danctnix-tweaks-app
-danctnix-tweaks-app-phosh
 danctnix-tweaks-app-pinephone
-phosh-antispam
+# phosh-antispam
 
 
 #####################
