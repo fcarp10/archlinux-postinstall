@@ -23,6 +23,7 @@ syncthing
 transmission-gtk
 nebula
 openconnect
+networkmanager-openconnect
 remmina
 
 
