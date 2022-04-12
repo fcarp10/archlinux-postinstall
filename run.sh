@@ -148,8 +148,9 @@ while [ "$1" != "" ]; do
         ;;
     -cd)
         log "INFO" "applying desktop configuration... please wait"
-        # copy env vars
+        # add conf
         sudo cp desktop/etc/environment /etc/environment
+        sudo cp desktop/etc/pacman.conf /etc/pacman.conf
         # add pluging to pyenv
         git clone https://github.com/pyenv/pyenv-virtualenv.git "$(pyenv root)"/plugins/pyenv-virtualenv
         # set up docker
