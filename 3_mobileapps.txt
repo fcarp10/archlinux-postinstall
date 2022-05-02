@@ -20,10 +20,10 @@ telegram-desktop
 ##### photo/audio/video #####
 #############################
 celluloid
-lollypop
 eog
 gnome-podcasts
 gnome-sound-recorder
+amberol
 
 
 #################

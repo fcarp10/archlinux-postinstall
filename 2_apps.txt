@@ -30,12 +30,11 @@ remmina
 #############################
 ##### photo/audio/video #####
 #############################
-celluloid
+mpv
 nomacs
-lollypop
-rhythmbox
 freetube-bin
 shotwell
+amberol
 
 
 #################
@@ -73,6 +72,8 @@ vscodium-bin-marketplace
 jdk-openjdk
 pyenv
 docker
+neovim
+vim-plug
 
 
 ######################
