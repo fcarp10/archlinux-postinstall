@@ -3,7 +3,7 @@
 ####################
 firefox
 brave-bin
-ferdi-bin
+ferdium-bin
 
 
 #################
@@ -92,9 +92,9 @@ qt6-wayland
 ##### terminal/shell #####
 ##########################
 foot
+alacritty
 zsh
 zsh-autosuggestions
-zsh-completions
 zsh-syntax-highlighting
 zsh-theme-powerlevel10k
 zsh-autocomplete
