@@ -1,6 +1,5 @@
 virt-manager
-qemu
-qemu-arch-extra
+qemu-desktop
 vde2
 ebtables
 dnsmasq
