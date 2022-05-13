@@ -31,8 +31,6 @@ remmina
 ##### photo/audio/video #####
 #############################
 mpv
-nomacs
-freetube-bin
 shotwell
 amberol
 
@@ -82,8 +80,8 @@ vim-plug
 vimix-icon-theme
 skeuos-gtk
 breeze-default-cursor-theme
-qt5ct
-adwaita-qt
+# qt5ct
+# adwaita-qt
 qt5-wayland
 qt6-wayland
 
