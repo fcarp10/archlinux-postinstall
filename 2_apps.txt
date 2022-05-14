@@ -25,6 +25,7 @@ nebula
 openconnect
 networkmanager-openconnect
 remmina
+nmap
 
 
 #############################
@@ -59,7 +60,7 @@ texlive-pictures
 texlive-publishers
 texlive-science
 tllocalmgr-git
-gedit
+gnome-text-editor
 
 
 ###############
