@@ -39,7 +39,7 @@ s3gf4ult.monokai-vibrant
 ## add-ons ##
 #############
 fabiospampinato.vscode-open-in-application
-kruemelkatze.vscode-dashboard
+alefragnani.project-manager
 stkb.rewrap
 
 

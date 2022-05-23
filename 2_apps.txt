@@ -136,6 +136,7 @@ exfatprogs
 rsync
 rmlint
 khal
+ncdu
 
 
 ################
