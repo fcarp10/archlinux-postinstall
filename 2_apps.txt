@@ -79,12 +79,12 @@ vim-plug
 ##### appearance #####
 ######################
 vimix-icon-theme
-skeuos-gtk
+adw-gtk3
 breeze-default-cursor-theme
 # qt5ct
 # adwaita-qt
-qt5-wayland
-qt6-wayland
+# qt5-wayland
+# qt6-wayland
 
 
 ##########################
