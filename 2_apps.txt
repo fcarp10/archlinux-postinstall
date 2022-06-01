@@ -80,7 +80,7 @@ vim-plug
 ######################
 vimix-icon-theme
 adw-gtk3
-breeze-default-cursor-theme
+breezex-cursor-theme
 # qt5ct
 # adwaita-qt
 # qt5-wayland
