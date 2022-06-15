@@ -11,3 +11,4 @@ mako
 greetd
 wob
 sworkstyle
+sov
