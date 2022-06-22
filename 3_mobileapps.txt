@@ -63,6 +63,7 @@ polkit-gnome
 danctnix-tweaks-app
 danctnix-tweaks-app-pinephone
 # phosh-antispam
+gnome-firmware
 
 
 #####################

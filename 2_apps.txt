@@ -111,6 +111,7 @@ drawio-desktop-bin
 gnome-disk-utility
 junction
 swappy
+gnome-firmware
 
 
 #####################
