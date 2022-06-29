@@ -1,0 +1,9 @@
+[Unit]
+Description=QCA6390 Workaround
+
+[Service]
+ExecStartPre=/bin/sleep 10
+ExecStart=/usr/bin/modprobe hci_uart
+
+[Install]
+WantedBy=multi-user.target
