@@ -8,4 +8,5 @@ alsa-ucm-conf
 alsa-utils
 alsa-firmware
 pamixer
-easyeffects
+pavucontrol
+#easyeffects
