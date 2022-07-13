@@ -121,7 +121,6 @@ curl
 jq
 downgrade
 duf-bin
-htop
 neofetch
 gvfs
 zip
@@ -139,6 +138,8 @@ rsync
 rmlint
 khal
 ncdu
+gotop
+ctop
 
 
 ################
