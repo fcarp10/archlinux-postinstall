@@ -35,6 +35,7 @@ nmap
 mpv
 shotwell
 amberol
+kooha
 
 
 #################
