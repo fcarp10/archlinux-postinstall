@@ -22,9 +22,10 @@ nextcloud-client
 syncthing
 transmission-gtk
 nebula
-openconnect
-networkmanager-openconnect
+# openconnect
+# networkmanager-openconnect
 remmina
+freerdp
 nmap
 
 
@@ -35,6 +36,7 @@ mpv
 shotwell
 amberol
 yt-dlp
+kooha
 
 
 #################
@@ -91,7 +93,7 @@ breezex-cursor-theme
 ##########################
 ##### terminal/shell #####
 ##########################
-foot
+# foot
 alacritty
 zsh
 zsh-autosuggestions
@@ -104,7 +106,7 @@ bash-completion
 #####################
 ##### gui utils #####
 #####################
-pamac-aur
+# pamac-aur
 gnome-keyring
 polkit-gnome
 baobab
@@ -139,7 +141,7 @@ rsync
 rmlint
 khal
 ncdu
-gotop
+btop
 ctop
 
 
