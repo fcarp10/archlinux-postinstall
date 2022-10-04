@@ -9,5 +9,6 @@ network-manager-applet
 libpipewire02
 mako
 greetd
+greetd-tuigreet-bin
 wob
 sworkstyle

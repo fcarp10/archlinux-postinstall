@@ -10,10 +10,7 @@ if [ -e "/dev/dri/card1" ]; then
     egpu="/dev/dri/card0"
   fi
   sleep 5
-  # make sway to use intel, copy display buffers to egpu
-  WLR_DRM_DEVICES="${intel}:${egpu}" sway
-  # make sway to not use intel, only egpu
-  # WLR_DRM_DEVICES="${egpu}" sway
+  WLR_DRM_DEVICES="${egpu}:${intel}" sway
 else
   # echo "No eGPU detected"
   sway

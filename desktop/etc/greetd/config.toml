@@ -8,17 +8,15 @@ vt = 1
 
 # `agreety` is the bundled agetty/login-lookalike. You can replace `$SHELL`
 # with whatever you want started, such as `sway`.
-command = "agreety --cmd sway"
 # command = "agreety --cmd $SHELL"
-
+command = "tuigreet --cmd sway-run"
 
 # The user to run the command as. The privileges this user must have depends
 # on the greeter. A graphical greeter may for example require the user to be
 # in the `video` group.
 user = "greeter"
 
-
 [initial_session]
-command = "sh /etc/greetd/sway-egpu.sh"
+command = "sway-run"
 # command = "sway"
 user = "vegito"
