@@ -7,3 +7,4 @@ brightnessctl
 wmctrl 
 xdotool
 libinput-three-finger-drag
+thermald

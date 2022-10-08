@@ -44,6 +44,7 @@ kooha
 #################
 thunar
 thunar-archive-plugin
+tumbler
 file-roller
 
 

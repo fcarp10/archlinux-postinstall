@@ -159,8 +159,10 @@ while [ "$1" != "" ]; do
         # libinput-gestures config
         sudo gpasswd -a $USER input
         libinput-gestures-setup desktop
-        # start wob service
+        # enable wob service
         systemctl enable --now --user wob.socket
+        # enable thermald service for 1185G7 frequency
+        sudo systemctl enable thermald.service
         log "INFO" "done"
         ;;
     -cm)
