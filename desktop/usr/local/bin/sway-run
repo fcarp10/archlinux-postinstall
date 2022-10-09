@@ -1,7 +1,22 @@
 #!/bin/sh
 
+# Session
+export XDG_SESSION_TYPE=wayland
+export XDG_SESSION_DESKTOP=sway
+export XDG_CURRENT_DESKTOP=sway
+
+# Wayland stuff
+# export MOZ_ENABLE_WAYLAND=1
+# export QT_QPA_PLATFORM=wayland
+# export QT_QPA_PLATFORMTHEME=qt5ct
+export WLR_DRM_NO_MODIFIERS=1
+export CLUTTER_BACKEND=wayland
+export SDL_VIDEODRIVER=wayland
+export _JAVA_AWT_WM_NONREPARENTING=1
+
+
 if [ -e "/dev/dri/card1" ]; then
-  # echo "eGPU detected"
+  echo "eGPU detected"
   if [ ! -z "$(udevadm info -a -n /dev/dri/card0 | grep i915)" ]; then
     intel="/dev/dri/card0"
     egpu="/dev/dri/card1"
@@ -9,8 +24,8 @@ if [ -e "/dev/dri/card1" ]; then
     intel="/dev/dri/card1"
     egpu="/dev/dri/card0"
   fi
-  WLR_DRM_DEVICES="${egpu}:${intel}" sway
-  # WLR_DRM_DEVICES="${egpu}" sway
+  # WLR_DRM_DEVICES="${egpu}:${intel}" sway
+  WLR_DRM_DEVICES="${egpu}" sway
 else
   # echo "No eGPU detected"
   sway
