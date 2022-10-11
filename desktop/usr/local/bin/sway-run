@@ -16,7 +16,7 @@ export _JAVA_AWT_WM_NONREPARENTING=1
 
 
 if [ -e "/dev/dri/card1" ]; then
-  echo "eGPU detected"
+  # echo "eGPU detected"
   if [ ! -z "$(udevadm info -a -n /dev/dri/card0 | grep i915)" ]; then
     intel="/dev/dri/card0"
     egpu="/dev/dri/card1"
@@ -24,8 +24,8 @@ if [ -e "/dev/dri/card1" ]; then
     intel="/dev/dri/card1"
     egpu="/dev/dri/card0"
   fi
-  # WLR_DRM_DEVICES="${egpu}:${intel}" sway
-  WLR_DRM_DEVICES="${egpu}" sway
+  WLR_DRM_DEVICES="${egpu}:${intel}" sway
+  # WLR_DRM_DEVICES="${egpu}" sway
 else
   # echo "No eGPU detected"
   sway
