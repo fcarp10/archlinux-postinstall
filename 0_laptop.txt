@@ -4,7 +4,6 @@
 ## tlp
 auto-cpufreq
 brightnessctl
-wmctrl 
-xdotool
+# libinput
 libinput-three-finger-drag
 thermald

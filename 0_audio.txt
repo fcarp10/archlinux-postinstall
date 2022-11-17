@@ -3,10 +3,6 @@
 #################
 pipewire
 pipewire-pulse
-sof-firmware
-alsa-ucm-conf
-alsa-utils
-alsa-firmware
+pipewire-alsa
 pamixer
 pavucontrol
-#easyeffects

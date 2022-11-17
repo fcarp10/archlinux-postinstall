@@ -63,7 +63,7 @@ texlive-latexextra
 texlive-pictures
 texlive-publishers
 texlive-science
-tllocalmgr-git
+# tllocalmgr-git
 gnome-text-editor
 
 
@@ -113,9 +113,6 @@ polkit-gnome
 baobab
 drawio-desktop-bin
 gnome-disk-utility
-junction
-swappy
-gnome-firmware
 
 
 #####################
@@ -135,7 +132,6 @@ grim
 slurp
 pdftk
 pdfpc
-dell-command-configure
 cmatrix
 exfatprogs
 rsync
@@ -144,6 +140,7 @@ khal
 ncdu
 btop
 ctop
+fwupd
 
 
 ################

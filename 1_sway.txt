@@ -3,10 +3,8 @@ waybar
 swaylock
 swayidle
 wofi
-xdg-desktop-portal
 xdg-desktop-portal-wlr
 network-manager-applet
-libpipewire02
 mako
 greetd
 greetd-tuigreet-bin
