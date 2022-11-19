@@ -4,5 +4,8 @@
 pipewire
 pipewire-pulse
 pipewire-alsa
+pipewire-jack
+wireplumber
 pamixer
 pavucontrol
+sof-firmware

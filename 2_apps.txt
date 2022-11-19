@@ -63,7 +63,7 @@ texlive-latexextra
 texlive-pictures
 texlive-publishers
 texlive-science
-# tllocalmgr-git
+urw-arial
 gnome-text-editor
 
 
