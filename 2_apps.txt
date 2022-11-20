@@ -121,7 +121,7 @@ gnome-disk-utility
 curl
 jq
 downgrade
-duf-bin
+duf
 neofetch
 gvfs
 zip
@@ -135,7 +135,7 @@ pdfpc
 cmatrix
 exfatprogs
 rsync
-rmlint
+# rmlint
 khal
 ncdu
 btop

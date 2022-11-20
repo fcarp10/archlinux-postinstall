@@ -149,20 +149,20 @@ while [ "$1" != "" ]; do
     -cd)
         log "INFO" "applying desktop configuration... please wait"
         # add conf
-        sudo cp desktop/etc/environment /etc/environment
         sudo cp desktop/etc/pacman.conf /etc/pacman.conf
+        sudo cp desktop/etc/greetd/config.toml /etc/greetd/
+        sudo cp desktop/usr/local/bin/sway-run /usr/local/bin/
+        sudo cp desktop/etc/locale.gen /etc/
+        sudo locale-gen
         # add pluging to pyenv
         git clone https://github.com/pyenv/pyenv-virtualenv.git "$(pyenv root)"/plugins/pyenv-virtualenv
         # set up docker
         sudo usermod -aG docker "$USER"
         newgrp docker
-        # libinput-gestures config
-        sudo gpasswd -a $USER input
-        libinput-gestures-setup desktop
         # enable wob service
         systemctl enable --now --user wob.socket
         # enable thermald service for 1185G7 frequency
-        sudo systemctl enable thermald.service
+        # sudo systemctl enable thermald.service
         log "INFO" "done"
         ;;
     -cm)

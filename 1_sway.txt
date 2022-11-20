@@ -1,4 +1,5 @@
 sway
+swaybg
 waybar
 swaylock
 swayidle
