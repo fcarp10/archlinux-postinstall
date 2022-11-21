@@ -155,7 +155,7 @@ while [ "$1" != "" ]; do
         # clone dotfiles
         echo "alias config='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'" >>$HOME/.bashrc
         git clone --bare https://github.com/fcarp10/dotfiles.git $HOME/.dotfiles
-        exec "$SHELL"
+        source $HOME/.bashrc
         config reset --hard
         config checkout
         config config --local status.showUntrackedFiles no
