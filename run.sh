@@ -67,6 +67,9 @@ while [ "$1" != "" ]; do
     case $1 in
     -ba)
         install_package 0_audio.txt
+        systemctl --user enable --now pipewire.socket
+        systemctl --user enable --now pipewire-pulse.socket
+        systemctl --user enable --now wireplumber.service
         ;;
     -bb)
         install_package 0_bluetooth.txt
@@ -81,16 +84,28 @@ while [ "$1" != "" ]; do
         log "INFO" "enabling auto-cpufreq service..."
         # sudo systemctl enable tlp.service
         sudo systemctl enable auto-cpufreq.service
+        # enable thermald service for 1185G7 frequency
+        sudo systemctl enable thermald.service
         log "INFO" "done"
         ;;
     -s)
         install_package 1_sway.txt
         log "INFO" "enabling greetd service..."
+        # enable greetd service
+        sudo cp desktop/etc/greetd/config.toml /etc/greetd/
+        sudo cp desktop/usr/local/bin/sway-run /usr/local/bin/
         sudo systemctl enable greetd.service -f
+        # enable wob service
+        systemctl enable --now --user wob.socket        
         log "INFO" "done"
         ;;
     -a)
         install_package 2_apps.txt
+        # set up docker
+        sudo usermod -aG docker "$USER"
+        newgrp docker
+        # add pluging to pyenv
+        git clone https://github.com/pyenv/pyenv-virtualenv.git "$(pyenv root)"/plugins/pyenv-virtualenv
         ;;
     -ma)
         install_package 3_mobileapps.txt
@@ -144,25 +159,15 @@ while [ "$1" != "" ]; do
         config reset --hard
         config checkout
         config config --local status.showUntrackedFiles no
+        # generate locale
+        sudo cp desktop/etc/locale.gen /etc/
+        sudo locale-gen
+        # copy pacman conf
+        sudo cp desktop/etc/pacman.conf /etc/pacman.conf
         log "INFO" "done"
         ;;
     -cd)
         log "INFO" "applying desktop configuration... please wait"
-        # add conf
-        sudo cp desktop/etc/pacman.conf /etc/pacman.conf
-        sudo cp desktop/etc/greetd/config.toml /etc/greetd/
-        sudo cp desktop/usr/local/bin/sway-run /usr/local/bin/
-        sudo cp desktop/etc/locale.gen /etc/
-        sudo locale-gen
-        # add pluging to pyenv
-        git clone https://github.com/pyenv/pyenv-virtualenv.git "$(pyenv root)"/plugins/pyenv-virtualenv
-        # set up docker
-        sudo usermod -aG docker "$USER"
-        newgrp docker
-        # enable wob service
-        systemctl enable --now --user wob.socket
-        # enable thermald service for 1185G7 frequency
-        # sudo systemctl enable thermald.service
         log "INFO" "done"
         ;;
     -cm)
