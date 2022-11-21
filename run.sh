@@ -101,6 +101,8 @@ while [ "$1" != "" ]; do
         ;;
     -a)
         install_package 2_apps.txt
+        # change shell to zsh
+        chsh -s /usr/bin/zsh
         # set up docker
         sudo usermod -aG docker "$USER"
         newgrp docker
@@ -145,8 +147,6 @@ while [ "$1" != "" ]; do
         ;;
     -c)
         log "INFO" "applying global configuration... please wait"
-        # change shell to zsh
-        chsh -s /usr/bin/zsh
         # set up git
         git config --global user.name "Francisco Carpio"
         git config --global user.email "carpiofj@gmail.com"
