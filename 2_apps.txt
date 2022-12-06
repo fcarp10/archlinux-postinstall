@@ -137,7 +137,6 @@ cmatrix
 exfatprogs
 rsync
 # rmlint
-khal
 ncdu
 btop
 ctop
