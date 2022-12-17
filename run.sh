@@ -67,6 +67,9 @@ while [ "$1" != "" ]; do
     case $1 in
     -ba)
         install_package 0_audio.txt
+        systemctl --user enable --now pipewire.socket
+        systemctl --user enable --now pipewire-pulse.socket
+        systemctl --user enable --now wireplumber.service
         ;;
     -bb)
         install_package 0_bluetooth.txt
@@ -78,19 +81,32 @@ while [ "$1" != "" ]; do
         ;;
     -bl)
         install_package 0_laptop.txt
-        log "INFO" "enabling auto-cpufreq service..."
         # sudo systemctl enable tlp.service
+        log "INFO" "enabling auto-cpufreq service..."
         sudo systemctl enable auto-cpufreq.service
+        log "INFO" "enabling thermald service..."
+        sudo systemctl enable thermald.service
         log "INFO" "done"
         ;;
     -s)
         install_package 1_sway.txt
         log "INFO" "enabling greetd service..."
+        sudo cp desktop/etc/greetd/config.toml /etc/greetd/
+        sudo cp desktop/usr/local/bin/sway-run /usr/local/bin/
         sudo systemctl enable greetd.service -f
+        log "INFO" "enabling wob service..."
+        systemctl enable --now --user wob.socket        
         log "INFO" "done"
         ;;
     -a)
         install_package 2_apps.txt
+        log "INFO" "changing shell to zsh..."
+        chsh -s /usr/bin/zsh
+        log "INFO" "setting up docker..."
+        sudo usermod -aG docker "$USER"
+        newgrp docker
+        log "INFO" "adding virtualenv to pyenv..."
+        git clone https://github.com/pyenv/pyenv-virtualenv.git "$(pyenv root)"/plugins/pyenv-virtualenv
         ;;
     -ma)
         install_package 3_mobileapps.txt
@@ -130,44 +146,31 @@ while [ "$1" != "" ]; do
         ;;
     -c)
         log "INFO" "applying global configuration... please wait"
-        # change shell to zsh
-        chsh -s /usr/bin/zsh
-        # set up git
+        log "INFO" "setting up git..."
         git config --global user.name "Francisco Carpio"
         git config --global user.email "carpiofj@gmail.com"
         git config credential.helper store
         git config --global credential.helper store
-        # clone dotfiles
+        log "INFO" "cloning dotfiles..."
         echo "alias config='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'" >>$HOME/.bashrc
         git clone --bare https://github.com/fcarp10/dotfiles.git $HOME/.dotfiles
-        exec "$SHELL"
+        source $HOME/.bashrc
         config reset --hard
         config checkout
         config config --local status.showUntrackedFiles no
+        log "INFO" "generating locale..."
+        sudo cp desktop/etc/locale.gen /etc/
+        sudo locale-gen
+        log "INFO" "copying pacman conf..."
+        sudo cp desktop/etc/pacman.conf /etc/pacman.conf
         log "INFO" "done"
         ;;
     -cd)
         log "INFO" "applying desktop configuration... please wait"
-        # add conf
-        sudo cp desktop/etc/pacman.conf /etc/pacman.conf
-        sudo cp desktop/etc/greetd/config.toml /etc/greetd/
-        sudo cp desktop/usr/local/bin/sway-run /usr/local/bin/
-        sudo cp desktop/etc/locale.gen /etc/
-        sudo locale-gen
-        # add pluging to pyenv
-        git clone https://github.com/pyenv/pyenv-virtualenv.git "$(pyenv root)"/plugins/pyenv-virtualenv
-        # set up docker
-        sudo usermod -aG docker "$USER"
-        newgrp docker
-        # enable wob service
-        systemctl enable --now --user wob.socket
-        # enable thermald service for 1185G7 frequency
-        # sudo systemctl enable thermald.service
         log "INFO" "done"
         ;;
     -cm)
         log "INFO" "applying mobile configuration... please wait"
-        # copy env vars
         sudo cp mobile/etc/environment /etc/environment
         log "INFO" "done"
         ;;

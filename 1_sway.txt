@@ -11,3 +11,4 @@ greetd
 greetd-tuigreet-bin
 wob
 sworkstyle
+poweralertd

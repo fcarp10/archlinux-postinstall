@@ -16,7 +16,6 @@ command = "tuigreet --cmd sway-run"
 # in the `video` group.
 user = "greeter"
 
-[initial_session]
-command = "sway-run"
-# command = "sway"
-user = "vegito"
+# [initial_session]
+# command = "sway-run"
+# user = "vegito"
