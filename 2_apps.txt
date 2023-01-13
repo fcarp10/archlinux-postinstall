@@ -12,6 +12,7 @@ ferdium-bin
 thunderbird
 thunderbird-dark-reader
 signal-desktop
+newsflash
 
 
 ########################
