@@ -5,7 +5,7 @@ swaylock
 swayidle
 wofi
 xdg-desktop-portal-wlr
-network-manager-applet
+nm-connection-editor
 mako
 greetd
 greetd-tuigreet-bin
