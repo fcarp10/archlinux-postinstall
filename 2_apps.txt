@@ -28,6 +28,7 @@ nebula
 remmina
 freerdp
 nmap
+mullvad-vpn-bin
 
 
 #############################
@@ -161,3 +162,4 @@ ttf-roboto
 ttf-roboto-mono
 otf-font-awesome
 ttf-meslo-nerd-font-powerlevel10k
+nerd-fonts-jetbrains-mono
