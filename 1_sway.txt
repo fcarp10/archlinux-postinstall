@@ -5,10 +5,8 @@ swaylock
 swayidle
 wofi
 xdg-desktop-portal-wlr
-nm-connection-editor
 mako
 greetd
 greetd-tuigreet-bin
 wob
 sworkstyle
-poweralertd

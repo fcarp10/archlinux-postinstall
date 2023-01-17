@@ -45,15 +45,16 @@ usage='Usage:
 '$0' [OPTION]
 
 OPTIONS:
+-p \t Installs paru.
 -ba \t Installs audio.
 -bb \t Installs bluetooth.
 -bl \t Installs laptop.
 -s \t Installs sway.
+-hp \t Installs hyprland.
 -a \t Installs apps.
 -ma \t Installs mobile apps.
 -t \t Installs printers.
 -k \t Installs kvm.
--p \t Installs paru.
 -vs \t Installs vscodium extensions.
 -g \t Installs gaming.
 -c \t Applies global configuration.
@@ -93,6 +94,16 @@ while [ "$1" != "" ]; do
         log "INFO" "enabling greetd service..."
         sudo cp desktop/etc/greetd/config.toml /etc/greetd/
         sudo cp desktop/usr/local/bin/sway-run /usr/local/bin/
+        sudo systemctl enable greetd.service -f
+        log "INFO" "enabling wob service..."
+        systemctl enable --now --user wob.socket        
+        log "INFO" "done"
+        ;;
+    -hp)
+        install_package 1_hyprland.txt
+        log "INFO" "enabling greetd service..."
+        sudo cp desktop/etc/greetd/config.toml /etc/greetd/
+        sudo cp desktop/usr/local/bin/hyprland-run /usr/local/bin/
         sudo systemctl enable greetd.service -f
         log "INFO" "enabling wob service..."
         systemctl enable --now --user wob.socket        

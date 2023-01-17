@@ -1,0 +1,14 @@
+hyprland
+swaybg
+# waybar
+waybar-hyprland-git
+swaylock
+swayidle
+wofi
+# xdg-desktop-portal-wlr
+xdg-desktop-portal-hyprland-git
+mako
+greetd
+greetd-tuigreet-bin
+wob
+sworkstyle

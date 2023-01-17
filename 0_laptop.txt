@@ -1,9 +1,10 @@
 ##################
 ##### laptop #####
 ##################
-## tlp
+# tlp
 auto-cpufreq
 brightnessctl
 # libinput
 libinput-three-finger-drag
 thermald
+poweralertd

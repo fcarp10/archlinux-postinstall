@@ -18,6 +18,7 @@ newsflash
 ########################
 ##### network/sync #####
 ########################
+nm-connection-editor
 nextcloud-client
 syncthing
 transmission-gtk
@@ -142,6 +143,9 @@ ncdu
 btop
 ctop
 fwupd
+nano
+lsd
+bat
 
 
 ################
