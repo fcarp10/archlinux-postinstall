@@ -110,7 +110,6 @@ bash-completion
 #####################
 ##### gui utils #####
 #####################
-# pamac-aur
 gnome-keyring
 polkit-gnome
 baobab
@@ -146,6 +145,7 @@ fwupd
 nano
 lsd
 bat
+kubecolor
 
 
 ################
