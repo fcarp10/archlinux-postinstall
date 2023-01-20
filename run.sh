@@ -157,11 +157,12 @@ while [ "$1" != "" ]; do
         ;;
     -c)
         log "INFO" "applying global configuration... please wait"
-        log "INFO" "setting up git..."
-        git config --global user.name "Francisco Carpio"
-        git config --global user.email "carpiofj@gmail.com"
-        git config credential.helper store
-        git config --global credential.helper store
+        log "INFO" "installing oh-my-zsh and plugins"
+        sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+        git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
+        git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+        git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+        git clone https://github.com/marlonrichert/zsh-autocomplete ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autocomplete
         log "INFO" "cloning dotfiles..."
         echo "alias config='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'" >>$HOME/.bashrc
         git clone --bare https://github.com/fcarp10/dotfiles.git $HOME/.dotfiles

@@ -82,28 +82,13 @@ neovim
 vim-plug
 
 
-######################
-##### appearance #####
-######################
-vimix-icon-theme
-adw-gtk3
-breezex-cursor-theme
-# qt5ct
-# adwaita-qt
-# qt5-wayland
-# qt6-wayland
-
-
 ##########################
 ##### terminal/shell #####
 ##########################
 # foot
 alacritty
+alacritty-themes
 zsh
-zsh-autosuggestions
-zsh-syntax-highlighting
-zsh-theme-powerlevel10k
-zsh-autocomplete
 bash-completion
 
 
@@ -146,6 +131,8 @@ nano
 lsd
 bat
 kubecolor
+thefuck
+tealdeer
 
 
 ################
@@ -157,10 +144,12 @@ pass-otp
 wl-clipboard
 pinentry
 
-
-#################
-##### fonts #####
-#################
+######################
+##### appearance #####
+######################
+vimix-icon-theme
+adw-gtk3
+breezex-cursor-theme
 ttf-roboto
 ttf-roboto-mono
 otf-font-awesome
