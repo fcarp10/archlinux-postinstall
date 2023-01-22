@@ -1,5 +1,8 @@
 #!/bin/sh
 
+export EDITOR=nvim
+export VISUAL=nvim
+
 # Session
 export XDG_SESSION_TYPE=wayland
 export XDG_SESSION_DESKTOP=sway

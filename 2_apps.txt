@@ -133,6 +133,7 @@ bat
 kubecolor
 thefuck
 tealdeer
+git-delta
 
 
 ################
