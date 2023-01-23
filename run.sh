@@ -175,6 +175,8 @@ while [ "$1" != "" ]; do
         sudo locale-gen
         log "INFO" "copying pacman conf..."
         sudo cp desktop/etc/pacman.conf /etc/pacman.conf
+        log "INFO" "copying nitch..."
+        sudo cp desktop/usr/local/bin/nitch /usr/local/bin/
         log "INFO" "done"
         ;;
     -cd)

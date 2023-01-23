@@ -109,7 +109,6 @@ curl
 jq
 downgrade
 duf
-neofetch
 gvfs
 zip
 unrar
