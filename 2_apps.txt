@@ -44,8 +44,8 @@ kooha
 #################
 ##### files #####
 #################
-thunar
-thunar-archive-plugin
+nemo
+nemo-fileroller
 tumbler
 file-roller
 
@@ -155,4 +155,4 @@ ttf-roboto
 ttf-roboto-mono
 otf-font-awesome
 ttf-meslo-nerd-font-powerlevel10k
-nerd-fonts-jetbrains-mono
+ttf-jetbrains-mono-nerd
