@@ -147,7 +147,8 @@ pinentry
 ######################
 ##### appearance #####
 ######################
-vimix-icon-theme
+papirus-folders-git
+papirus-icon-theme
 adw-gtk3
 breezex-cursor-theme
 ttf-roboto
