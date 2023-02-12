@@ -1,10 +1,13 @@
 ##################
 ##### laptop #####
 ##################
-# tlp
 auto-cpufreq
 brightnessctl
-# libinput
-libinput-three-finger-drag
 thermald
 poweralertd
+## touchpad gestures
+libinput
+ruby
+# temporal until ydotool is fixed
+ydotool-bin
+

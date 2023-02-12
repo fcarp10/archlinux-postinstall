@@ -82,11 +82,16 @@ while [ "$1" != "" ]; do
         ;;
     -bl)
         install_package 0_laptop.txt
-        # sudo systemctl enable tlp.service
         log "INFO" "enabling auto-cpufreq service..."
         sudo systemctl enable auto-cpufreq.service
         log "INFO" "enabling thermald service..."
         sudo systemctl enable thermald.service
+        log "INFO" "installing fusuma..."
+        sudo gpasswd -a $USER input
+        sudo gem install --no-user-install fusuma
+        log "INFO" "enabling ydotool (temporal until ydotool is fixed)..."
+        sudo cp /usr/lib/systemd/system/ydotool.service /usr/lib/systemd/user/ydotool.service 
+        systemctl enable --now --user ydotool
         log "INFO" "done"
         ;;
     -s)
