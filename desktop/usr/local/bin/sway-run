@@ -18,18 +18,25 @@ export SDL_VIDEODRIVER=wayland
 export _JAVA_AWT_WM_NONREPARENTING=1
 
 
-if [ -e "/dev/dri/card1" ]; then
+if id -u "vegito" >/dev/null 2>&1; then
+  if [ -e "/dev/dri/card1" ]; then
   # echo "eGPU detected"
-  if [ ! -z "$(udevadm info -a -n /dev/dri/card0 | grep i915)" ]; then
-    intel="/dev/dri/card0"
-    egpu="/dev/dri/card1"
+    if [ ! -z "$(udevadm info -a -n /dev/dri/card0 | grep i915)" ]; then
+      intel="/dev/dri/card0"
+      egpu="/dev/dri/card1"
+    else
+      intel="/dev/dri/card1"
+      egpu="/dev/dri/card0"
+    fi
+    WLR_DRM_DEVICES="${egpu}:${intel}" sway --config .config/sway/setup_1
   else
-    intel="/dev/dri/card1"
-    egpu="/dev/dri/card0"
+    # echo "No eGPU detected"
+    sway --config .config/sway/setup_1
   fi
-  WLR_DRM_DEVICES="${egpu}:${intel}" sway
-  # WLR_DRM_DEVICES="${egpu}" sway
+elif id -u "vegeta" >/dev/null 2>&1; then
+  sway --config .config/sway/setup_2
+elif id -u "goku" >/dev/null 2>&1; then
+  sway --config .config/sway/setup_1
 else
-  # echo "No eGPU detected"
-  sway
+  echo "no valid user found"
 fi
