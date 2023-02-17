@@ -89,9 +89,10 @@ while [ "$1" != "" ]; do
         log "INFO" "installing fusuma..."
         sudo gpasswd -a $USER input
         sudo gem install --no-user-install fusuma
-        log "INFO" "enabling ydotool (temporal until ydotool is fixed)..."
-        sudo cp /usr/lib/systemd/system/ydotool.service /usr/lib/systemd/user/ydotool.service 
+        log "INFO" "enabling ydotool..."
         systemctl enable --now --user ydotool
+        log "INFO" "adding easyeffects pressets"
+        bash -c "$(curl -fsSL https://raw.githubusercontent.com/JackHack96/EasyEffects-Presets/master/install.sh)"
         log "INFO" "done"
         ;;
     -s)

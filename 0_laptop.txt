@@ -10,4 +10,5 @@ libinput
 ruby
 # temporal until ydotool is fixed
 ydotool-bin
+easyeffects
 
