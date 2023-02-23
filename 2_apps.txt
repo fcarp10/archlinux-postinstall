@@ -39,6 +39,7 @@ shotwell
 amberol
 yt-dlp
 kooha
+upscaler
 
 
 #################
@@ -157,3 +158,4 @@ otf-font-awesome
 ttf-meslo-nerd-font-powerlevel10k
 ttf-jetbrains-mono-nerd
 ttf-ms-win10-auto
+font-manager

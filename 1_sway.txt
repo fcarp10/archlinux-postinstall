@@ -5,6 +5,7 @@ swaylock
 swayidle
 wofi
 xdg-desktop-portal-wlr
+xdg-desktop-portal-gtk
 mako
 greetd
 greetd-tuigreet-bin
