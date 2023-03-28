@@ -81,6 +81,7 @@ docker
 docker-buildx
 neovim
 vim-plug
+ansible
 
 
 ##########################
@@ -101,6 +102,7 @@ polkit-gnome
 baobab
 drawio-desktop-bin
 gnome-disk-utility
+piper
 
 
 #####################
