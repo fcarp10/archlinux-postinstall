@@ -40,6 +40,7 @@ amberol
 yt-dlp
 kooha
 upscaler
+freetube-bin
 
 
 #################
