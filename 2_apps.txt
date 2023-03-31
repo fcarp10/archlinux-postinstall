@@ -40,6 +40,8 @@ amberol
 yt-dlp
 kooha
 guvcview
+upscaler
+freetube-bin
 
 
 #################
@@ -82,6 +84,7 @@ docker
 docker-buildx
 neovim
 vim-plug
+ansible
 
 
 ##########################
@@ -102,6 +105,7 @@ polkit-gnome
 baobab
 drawio-desktop-bin
 gnome-disk-utility
+piper
 
 
 #####################
@@ -158,3 +162,5 @@ ttf-roboto-mono
 otf-font-awesome
 ttf-meslo-nerd-font-powerlevel10k
 ttf-jetbrains-mono-nerd
+ttf-ms-win10-auto
+font-manager
