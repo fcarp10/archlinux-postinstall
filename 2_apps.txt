@@ -39,6 +39,7 @@ shotwell
 amberol
 yt-dlp
 kooha
+guvcview
 
 
 #################
@@ -48,6 +49,7 @@ nemo
 nemo-fileroller
 tumbler
 file-roller
+converter
 
 
 ##########################
