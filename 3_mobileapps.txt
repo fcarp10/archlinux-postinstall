@@ -10,11 +10,13 @@ epiphany
 ##### social ####
 #################
 geary
-tootle
 cawbird
-telegram-desktop
-# fluffychat-bin
 
+########################
+##### network/sync #####
+########################
+syncthing
+nebula
 
 #############################
 ##### photo/audio/video #####
@@ -29,29 +31,13 @@ amberol
 #################
 ##### files #####
 #################
-portfolio-file-manager
 evince-mobile
-
-
-######################
-##### appearance #####
-######################
-skeuos-gtk
-vimix-icon-theme
-# qt5ct
-# adwaita-qt
-
+gnome-text-editor
 
 ##########################
 ##### terminal/shell #####
 ##########################
-foot
 zsh
-zsh-autosuggestions
-zsh-completions
-zsh-syntax-highlighting
-zsh-theme-powerlevel10k
-zsh-autocomplete
 bash-completion
 
 
@@ -60,17 +46,12 @@ bash-completion
 #####################
 gnome-keyring
 polkit-gnome
-danctnix-tweaks-app
-danctnix-tweaks-app-pinephone
-# phosh-antispam
-gnome-firmware
 
 
 #####################
 ##### cli utils #####
 #####################
 curl
-neofetch
 htop
 keychain
 
@@ -85,12 +66,14 @@ wl-clipboard
 pinentry
 
 
-#################
-##### fonts #####
-#################
-# ttf-roboto
-# ttf-roboto-mono
+######################
+##### appearance #####
+######################
+papirus-folders-git
+papirus-icon-theme
+adw-gtk3
 ttf-meslo-nerd-font-powerlevel10k
+ttf-jetbrains-mono-nerd
 
 
 ##################
@@ -101,6 +84,4 @@ dialect
 mousai
 whatip
 newsflash
-# gnome-todo
-# gnome-calendar-mobile
-# waydroid-image
+gnome-todo
