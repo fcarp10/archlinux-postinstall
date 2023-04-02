@@ -39,6 +39,7 @@ shotwell
 amberol
 yt-dlp
 kooha
+guvcview
 upscaler
 freetube-bin
 
@@ -50,6 +51,7 @@ nemo
 nemo-fileroller
 tumbler
 file-roller
+converter
 
 
 ##########################
