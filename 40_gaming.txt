@@ -4,4 +4,5 @@ libretro-snes9x
 libretro-dosbox-core-git
 libretro-mupen64plus-next
 libretro-sameboy
-# steam
+steam
+xorg-xwayland
