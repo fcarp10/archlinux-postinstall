@@ -103,7 +103,8 @@ baobab
 drawio-desktop-bin
 gnome-disk-utility
 piper
-
+# refind
+# refind-theme-regular-git
 
 #####################
 ##### cli utils #####
