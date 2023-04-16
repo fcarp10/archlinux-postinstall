@@ -141,11 +141,13 @@ git-delta
 ################
 ##### pass #####
 ################
-browserpass
 pass
 pass-otp
 wl-clipboard
 pinentry
+browserpass
+browserpass-chromium
+browserpass-firefox
 
 ######################
 ##### appearance #####
