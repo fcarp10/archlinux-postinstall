@@ -132,7 +132,7 @@ fwupd
 nano
 lsd
 bat
-kubecolor
+# kubecolor
 thefuck
 tealdeer
 git-delta
