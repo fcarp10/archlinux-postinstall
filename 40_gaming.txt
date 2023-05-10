@@ -10,3 +10,4 @@ xorg-xwayland
 wine-staging
 protonplus
 cabextract
+usb_modeswitch

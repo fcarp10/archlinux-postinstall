@@ -163,6 +163,7 @@ while [ "$1" != "" ]; do
         ;;
     -c)
         log "INFO" "applying global configuration... please wait"
+        timedatectl set-ntp true
         log "INFO" "installing oh-my-zsh and plugins"
         sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
         git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
@@ -184,6 +185,8 @@ while [ "$1" != "" ]; do
         log "INFO" "copying nitch..."
         sudo cp desktop/usr/local/bin/nitch /usr/local/bin/
         log "INFO" "done"
+        log "INFO" "changing papirus folder theme..."
+        papirus-folders -C yaru
         ;;
     -cd)
         log "INFO" "applying desktop configuration... please wait"
