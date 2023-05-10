@@ -9,3 +9,4 @@ steam
 xorg-xwayland
 wine-staging
 protonplus
+cabextract

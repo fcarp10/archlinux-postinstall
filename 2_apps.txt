@@ -136,6 +136,8 @@ kubecolor
 thefuck
 tealdeer
 git-delta
+wget
+lazygit
 
 
 ################
