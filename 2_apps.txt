@@ -23,8 +23,6 @@ nextcloud-client
 syncthing
 transmission-gtk
 nebula
-# openconnect
-# networkmanager-openconnect
 remmina
 freerdp
 nmap
@@ -90,7 +88,6 @@ ansible
 ##########################
 ##### terminal/shell #####
 ##########################
-# foot
 alacritty
 alacritty-themes
 zsh
@@ -106,7 +103,8 @@ baobab
 drawio-desktop-bin
 gnome-disk-utility
 piper
-
+# refind
+# refind-theme-regular-git
 
 #####################
 ##### cli utils #####
@@ -127,7 +125,6 @@ pdfpc
 cmatrix
 exfatprogs
 rsync
-# rmlint
 ncdu
 btop
 ctop
@@ -135,20 +132,24 @@ fwupd
 nano
 lsd
 bat
-kubecolor
+# kubecolor
 thefuck
 tealdeer
 git-delta
+wget
+lazygit
 
 
 ################
 ##### pass #####
 ################
-browserpass
 pass
 pass-otp
 wl-clipboard
 pinentry
+browserpass
+browserpass-chromium
+browserpass-firefox
 
 ######################
 ##### appearance #####
@@ -164,3 +165,4 @@ ttf-meslo-nerd-font-powerlevel10k
 ttf-jetbrains-mono-nerd
 ttf-ms-win10-auto
 font-manager
+openrgb-bin

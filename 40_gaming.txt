@@ -4,4 +4,10 @@ libretro-snes9x
 libretro-dosbox-core-git
 libretro-mupen64plus-next
 libretro-sameboy
-# steam
+amdvlk
+steam
+xorg-xwayland
+wine-staging
+protonplus
+cabextract
+usb_modeswitch
