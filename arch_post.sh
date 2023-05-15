@@ -173,7 +173,7 @@ while [ "$1" != "" ]; do
         git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
         git clone https://github.com/marlonrichert/zsh-autocomplete ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autocomplete
         log "INFO" "cloning dotfiles..."
-        echo "alias config='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'" >>$HOME/.bashrc
+        echo "alias config='git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'" >>$HOME/.bashrc
         git clone --bare https://github.com/fcarp10/dotfiles.git $HOME/.dotfiles
         source $HOME/.bashrc
         config reset --hard
