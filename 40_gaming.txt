@@ -16,7 +16,7 @@ steam
 xorg-xwayland
 wine-staging
 protonplus
-
+cabextract
 
 ###################
 ##### openrgb #####
@@ -30,3 +30,4 @@ libgtop
 #### controller USB gear ####
 #############################
 usb_modeswitch
+

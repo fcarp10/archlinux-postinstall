@@ -138,6 +138,8 @@ bat
 thefuck
 tealdeer
 git-delta
+wget
+lazygit
 
 
 ################
