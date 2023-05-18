@@ -1,12 +1,32 @@
+#####################
+##### retroarch #####
+#####################
 retroarch
 retroarch-assets-ozone
 libretro-snes9x
 libretro-dosbox-core-git
 libretro-mupen64plus-next
 libretro-sameboy
+
+########################
+##### steam/proton #####
+########################
 amdvlk
 steam
 xorg-xwayland
 wine-staging
 protonplus
+
+
+###################
+##### openrgb #####
+###################
+openrgb-bin
+lm_sensors
+glib2
+libgtop
+
+#############################
+#### controller USB gear ####
+#############################
 usb_modeswitch
