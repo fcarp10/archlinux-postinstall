@@ -1,0 +1,28 @@
+#!/bin/sh
+
+export EDITOR=nvim
+export VISUAL=nvim
+
+# Session
+export XDG_SESSION_TYPE=wayland
+
+# Wayland stuff
+export MOZ_ENABLE_WAYLAND=1
+# export QT_QPA_PLATFORM=wayland
+# export QT_QPA_PLATFORMTHEME=qt5ct
+export WLR_DRM_NO_MODIFIERS=1
+export CLUTTER_BACKEND=wayland
+export SDL_VIDEODRIVER=wayland
+export _JAVA_AWT_WM_NONREPARENTING=1
+
+cd ~
+
+if id -u "broly" >/dev/null 2>&1; then
+  Hyprland --config .config/hypr/setup_0.conf
+elif id -u "vegito" >/dev/null 2>&1; then
+  Hyprland --config .config/hypr/setup_1.conf
+elif id -u "vegeta" >/dev/null 2>&1; then
+  Hyprland --config .config/hypr/setup_2.conf
+else
+  echo "no valid user found"
+fi
