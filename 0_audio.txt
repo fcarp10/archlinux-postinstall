@@ -1,10 +1,11 @@
 #################
 ##### audio #####
 #################
+wireplumber
 pipewire
 pipewire-pulse
 pipewire-alsa
 pipewire-jack
-wireplumber
 pavucontrol
 sof-firmware
+easyeffects

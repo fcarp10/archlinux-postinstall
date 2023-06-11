@@ -1,13 +1,13 @@
 hyprland
 swaybg
-waybar
-# waybar-hyprland-git
+waybar-hyprland-git
 swaylock
 swayidle
 wofi
 xdg-desktop-portal-wlr
+xdg-desktop-portal-gtk
 mako
 greetd
-greetd-tuigreet-bin
+greetd-regreet
 wob
 sworkstyle

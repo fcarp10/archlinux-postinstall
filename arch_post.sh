@@ -90,7 +90,7 @@ while [ "$1" != "" ]; do
         sudo gpasswd -a $USER input
         sudo gem install --no-user-install fusuma
         log "INFO" "enabling ydotool..."
-        systemctl enable --now --user ydotoold.service
+        systemctl enable --now --user ydotool
         log "INFO" "adding easyeffects pressets"
         bash -c "$(curl -fsSL https://raw.githubusercontent.com/JackHack96/EasyEffects-Presets/master/install.sh)"
         log "INFO" "done"
@@ -98,7 +98,7 @@ while [ "$1" != "" ]; do
     -s)
         install_package 1_sway.txt
         log "INFO" "enabling greetd service..."
-        sudo cp desktop/etc/greetd/config.toml /etc/greetd/
+        sudo cp -R desktop/etc/greetd /etc/
         sudo cp desktop/usr/local/bin/sway-run /usr/local/bin/
         sudo systemctl enable greetd.service -f
         log "INFO" "enabling wob service..."
@@ -108,8 +108,8 @@ while [ "$1" != "" ]; do
     -hp)
         install_package 1_hyprland.txt
         log "INFO" "enabling greetd service..."
-        sudo cp desktop/etc/greetd/config.toml /etc/greetd/
-        sudo cp desktop/usr/local/bin/hyprland-run /usr/local/bin/
+        sudo cp -R desktop/etc/greetd /etc/
+        sudo cp desktop/usr/local/bin/hypr-run /usr/local/bin/
         sudo systemctl enable greetd.service -f
         log "INFO" "enabling wob service..."
         systemctl enable --now --user wob.socket        
@@ -117,8 +117,6 @@ while [ "$1" != "" ]; do
         ;;
     -a)
         install_package 2_apps.txt
-        log "INFO" "changing shell to zsh..."
-        chsh -s /usr/bin/zsh
         log "INFO" "setting up docker..."
         sudo usermod -aG docker "$USER"
         newgrp docker
