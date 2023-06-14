@@ -8,15 +8,17 @@ libretro-dosbox-core-git
 libretro-mupen64plus-next
 libretro-sameboy
 
-########################
-##### steam/proton #####
-########################
+############################
+##### proton/launchers #####
+############################
 amdvlk
 steam
 xorg-xwayland
 wine-staging
 protonplus
 cabextract
+cartridges
+heroic-games-launcher-bin
 
 ###################
 ##### openrgb #####
@@ -31,3 +33,8 @@ libgtop
 #############################
 usb_modeswitch
 
+############
+#### VR ####
+############
+alvr-git
+sidequest-bin

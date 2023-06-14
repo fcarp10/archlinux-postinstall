@@ -5,10 +5,11 @@ auto-cpufreq
 brightnessctl
 thermald
 poweralertd
-## touchpad gestures
+
+#############################
+##### touchpad gestures #####
+##################### #######
 libinput
 ruby
-# temporal until ydotool is fixed
-ydotool-bin
-easyeffects
+ydotool
 

@@ -4,7 +4,7 @@
 
 [background]
 path = "/etc/greetd/wallpaper.jpg"
-background_fit = "Cover"
+fit = "Cover"
 
 [GTK]
 application_prefer_dark_theme = true
