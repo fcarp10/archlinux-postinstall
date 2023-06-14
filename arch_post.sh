@@ -132,8 +132,8 @@ while [ "$1" != "" ]; do
         ;;
     -t)
         install_package 10_printers.txt
-        log "INFO" "enabling org.cups.cupsd.service service..."
-        sudo systemctl enable org.cups.cupsd.service
+        log "INFO" "enabling cups service..."
+        sudo systemctl enable cups
         log "INFO" "done"
         ;;
     -k)
