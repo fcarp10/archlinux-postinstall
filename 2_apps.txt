@@ -85,6 +85,7 @@ docker-buildx
 neovim
 vim-plug
 ansible
+python-pympress
 
 
 ##########################
