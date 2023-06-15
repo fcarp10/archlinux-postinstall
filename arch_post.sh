@@ -58,7 +58,7 @@ OPTIONS:
 -vs \t Installs vscodium extensions.
 -g \t Installs gaming.
 -c \t Applies global configuration.
--cd \t Applies desktop configuration.
+-cd \t Pulls dotfiles.
 -cm \t Applies mobile configuration.
 -h \t Shows available options.
 Only one option is allowed.
@@ -164,19 +164,13 @@ while [ "$1" != "" ]; do
     -c)
         log "INFO" "applying global configuration... please wait"
         timedatectl set-ntp true
+        timedatectl set-timezone Europe/Berlin
         log "INFO" "installing oh-my-zsh and plugins"
         sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
         git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
         git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
         git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
         git clone https://github.com/marlonrichert/zsh-autocomplete ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autocomplete
-        log "INFO" "cloning dotfiles..."
-        echo "alias config='git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'" >>$HOME/.bashrc
-        git clone --bare https://github.com/fcarp10/dotfiles.git $HOME/.dotfiles
-        source $HOME/.bashrc
-        config reset --hard
-        config checkout
-        config config --local status.showUntrackedFiles no
         log "INFO" "generating locale..."
         sudo cp desktop/etc/locale.gen /etc/
         sudo locale-gen
@@ -189,7 +183,13 @@ while [ "$1" != "" ]; do
         papirus-folders -C yaru
         ;;
     -cd)
-        log "INFO" "applying desktop configuration... please wait"
+        log "INFO" "pulling dotfiles... please wait"
+        echo "alias gdots='git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'" >>$HOME/.bashrc
+        git clone --bare git@github.com:fcarp10/dotfiles.git $HOME/.dotfiles
+        source $HOME/.bashrc
+        gdots reset --hard
+        gdots checkout
+        gdots config --local status.showUntrackedFiles no
         log "INFO" "done"
         ;;
     -cm)
