@@ -18,11 +18,13 @@ export _JAVA_AWT_WM_NONREPARENTING=1
 cd ~
 
 if id -u "broly" >/dev/null 2>&1; then
-  Hyprland --config .config/hypr/setup_0.conf
+  Hyprland --config .config/hypr/setup_desktop.conf
 elif id -u "vegito" >/dev/null 2>&1; then
-  Hyprland --config .config/hypr/setup_1.conf
+  Hyprland --config .config/hypr/setup_laptop.conf
 elif id -u "vegeta" >/dev/null 2>&1; then
-  Hyprland --config .config/hypr/setup_2.conf
+  Hyprland --config .config/hypr/setup_desktop_office.conf
+elif id -u "goku" >/dev/null 2>&1; then
+  Hyprland --config .config/hypr/setup_laptop_office.conf
 else
   echo "no valid user found"
 fi
