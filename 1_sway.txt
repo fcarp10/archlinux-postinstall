@@ -11,3 +11,6 @@ greetd
 greetd-regreet
 wob
 sworkstyle
+nemo
+nemo-fileroller
+tumbler

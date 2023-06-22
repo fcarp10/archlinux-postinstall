@@ -45,27 +45,41 @@ usage='Usage:
 '$0' [OPTION]
 
 OPTIONS:
--p \t Installs paru.
--ba \t Installs audio.
--bb \t Installs bluetooth.
--bl \t Installs laptop.
--s \t Installs sway.
--hp \t Installs hyprland.
--a \t Installs apps.
--ma \t Installs mobile apps.
--t \t Installs printers.
--k \t Installs kvm.
--vs \t Installs vscodium extensions.
--g \t Installs gaming.
--c \t Applies global configuration.
--cd \t Pulls dotfiles.
--cm \t Applies mobile configuration.
--h \t Shows available options.
-Only one option is allowed.
+-p \t Installs paru
+-ba \t Installs audio
+-bb \t Installs bluetooth
+-bl \t Installs laptop
+-s \t Installs sway
+-hp \t Installs hyprland
+-a \t Installs apps
+-ae \t Installs apps extra
+-ac \t Installs cli
+-ad \t Installs dev
+-ao \t Installs office
+-ap \t Installs pass
+-at \t Installs theme
+-ma \t Installs mobile apps
+-t \t Installs printers
+-k \t Installs kvm
+-vs \t Installs vscodium extensions
+-g \t Installs gaming
+-c \t Applies global configuration
+-cd \t Pulls dotfiles
+-cm \t Applies mobile configuration
+-h \t Shows available options
+Only one option is allowed
 '
 
 while [ "$1" != "" ]; do
     case $1 in
+    -p)
+        log "INFO" "installing paru... please wait"
+        sudo pacman -S --needed base-devel
+        git clone https://aur.archlinux.org/paru.git
+        cd paru || exit
+        makepkg -si
+        log "INFO" "done"
+        ;;
     -ba)
         install_package 0_audio.txt
         systemctl --user enable --now pipewire.socket
@@ -117,13 +131,24 @@ while [ "$1" != "" ]; do
         ;;
     -a)
         install_package 2_apps.txt
-        log "INFO" "setting up docker..."
-        sudo usermod -aG docker "$USER"
-        newgrp docker
-        log "INFO" "setting alacritty default for nemo..."
-        gsettings set org.cinnamon.desktop.default-applications.terminal exec alacritty
-        log "INFO" "adding virtualenv to pyenv..."
-        git clone https://github.com/pyenv/pyenv-virtualenv.git "$(pyenv root)"/plugins/pyenv-virtualenv
+        ;;
+    -ae)
+        install_package 2_apps_extra.txt
+        ;;
+    -ac)
+        install_package 2_cli.txt
+        ;;
+    -ad)
+        install_package 2_dev.txt
+        ;;
+    -ao)
+        install_package 2_office.txt
+        ;;
+    -ap)
+        install_package 2_pass.txt
+        ;;
+    -at)
+        install_package 2_theme.txt
         ;;
     -ma)
         install_package 3_mobileapps.txt
@@ -143,14 +168,6 @@ while [ "$1" != "" ]; do
         ;;
     -g)
         install_package 40_gaming.txt
-        ;;
-    -p)
-        log "INFO" "installing paru... please wait"
-        sudo pacman -S --needed base-devel
-        git clone https://aur.archlinux.org/paru.git
-        cd paru || exit
-        makepkg -si
-        log "INFO" "done"
         ;;
     -vs)
         log "INFO" "installing vscodium extensions... please wait"
@@ -181,6 +198,13 @@ while [ "$1" != "" ]; do
         log "INFO" "done"
         log "INFO" "changing papirus folder theme..."
         papirus-folders -C yaru
+        log "INFO" "setting up docker..."
+        sudo usermod -aG docker "$USER"
+        newgrp docker
+        log "INFO" "setting alacritty default for nemo..."
+        gsettings set org.cinnamon.desktop.default-applications.terminal exec alacritty
+        log "INFO" "adding virtualenv to pyenv..."
+        git clone https://github.com/pyenv/pyenv-virtualenv.git "$(pyenv root)"/plugins/pyenv-virtualenv
         ;;
     -cd)
         log "INFO" "pulling dotfiles... please wait"

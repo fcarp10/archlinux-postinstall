@@ -1,6 +1,3 @@
-#################
-##### audio #####
-#################
 wireplumber
 pipewire
 pipewire-pulse
@@ -8,4 +5,4 @@ pipewire-alsa
 pipewire-jack
 pavucontrol
 sof-firmware
-easyeffects
+

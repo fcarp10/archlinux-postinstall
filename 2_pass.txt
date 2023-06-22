@@ -1,0 +1,7 @@
+pass
+pass-otp
+wl-clipboard
+pinentry
+browserpass
+browserpass-chromium
+browserpass-firefox

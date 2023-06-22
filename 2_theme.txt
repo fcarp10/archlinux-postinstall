@@ -1,0 +1,9 @@
+papirus-folders
+papirus-icon-theme
+adw-gtk3
+breezex-cursor-theme
+ttf-roboto
+ttf-roboto-mono
+otf-font-awesome
+ttf-meslo-nerd-font-powerlevel10k
+ttf-jetbrains-mono-nerd

@@ -1,0 +1,14 @@
+mullvad-browser-bin
+signal-desktop
+newsflash
+syncthing
+transmission-gtk
+mullvad-vpn-bin
+shotwell
+amberol
+kooha
+guvcview
+upscaler
+converter
+gnome-disk-utility
+piper

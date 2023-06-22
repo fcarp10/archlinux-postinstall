@@ -1,0 +1,10 @@
+vscodium-bin
+vscodium-bin-marketplace
+jdk-openjdk
+pyenv
+docker
+docker-buildx
+neovim
+vim-plug
+ansible
+python-pympress

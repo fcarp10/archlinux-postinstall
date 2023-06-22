@@ -1,15 +1,7 @@
-##################
-##### laptop #####
-##################
 auto-cpufreq
 brightnessctl
 thermald
 poweralertd
-
-#############################
-##### touchpad gestures #####
-##################### #######
+easyeffects
 libinput
-ruby
 ydotool
-

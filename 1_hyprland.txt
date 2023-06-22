@@ -10,4 +10,7 @@ mako
 greetd
 greetd-regreet
 wob
-sworkstyle
+workstyle
+nemo
+nemo-fileroller
+tumbler

@@ -1,0 +1,4 @@
+nebula
+remmina
+freerdp
+nm-connection-editor

@@ -1,0 +1,12 @@
+libreoffice-fresh
+hunspell
+hunspell-en_us
+texlive-latexextra
+texlive-fontsextra
+texlive-bibtexextra
+texlive-formatsextra
+texlive-mathscience
+texlive-publishers
+ttf-ms-win10-auto
+urw-arial
+drawio-desktop-bin
