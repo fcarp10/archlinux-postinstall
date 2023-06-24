@@ -7,10 +7,10 @@ wofi
 xdg-desktop-portal-wlr
 xdg-desktop-portal-gtk
 mako
-greetd
-greetd-regreet
-wob
+autologin
 workstyle
 nemo
 nemo-fileroller
 tumbler
+wob
+

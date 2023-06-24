@@ -121,12 +121,12 @@ while [ "$1" != "" ]; do
         ;;
     -hp)
         install_package 1_hyprland.txt
-        log "INFO" "enabling greetd service..."
-        sudo cp -R desktop/etc/greetd /etc/
         sudo cp desktop/usr/local/bin/hypr-run /usr/local/bin/
-        sudo systemctl enable greetd.service -f
         log "INFO" "enabling wob service..."
-        systemctl enable --now --user wob.socket        
+        systemctl enable --now --user wob.socket
+        log "INFO" "enabling autologin service..."
+        sudo systemctl enable autologin
+        log "WARN" "remember to edit user and command in /usr/lib/systemd/system/autologin.service"      
         log "INFO" "done"
         ;;
     -a)
