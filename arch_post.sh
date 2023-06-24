@@ -49,6 +49,7 @@ OPTIONS:
 -ba \t Installs audio
 -bb \t Installs bluetooth
 -bl \t Installs laptop
+-bn \t Installs network
 -s \t Installs sway
 -hp \t Installs hyprland
 -a \t Installs apps
@@ -107,6 +108,10 @@ while [ "$1" != "" ]; do
         systemctl enable --now --user ydotool
         log "INFO" "adding easyeffects pressets"
         bash -c "$(curl -fsSL https://raw.githubusercontent.com/JackHack96/EasyEffects-Presets/master/install.sh)"
+        log "INFO" "done"
+        ;;
+    -bn)
+        install_package 0_network.txt
         log "INFO" "done"
         ;;
     -s)
