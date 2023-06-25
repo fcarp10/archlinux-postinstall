@@ -35,4 +35,5 @@ lazygit
 nmap
 yt-dlp
 mpv
+tgpt
 
