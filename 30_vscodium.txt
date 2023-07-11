@@ -1,31 +1,21 @@
 #########
 ## dev ##
 #########
-### shell
 foxundermoon.shell-format
 timonwong.shellcheck
-### go
 golang.go
-### python
-ms-pyright.pyright
 ms-python.python
-### c
 ms-vscode.cpptools
-### arduino
 platformio.platformio-ide
-### java
 redhat.java
 vscjava.vscode-java-debug
 vscjava.vscode-java-test
 vscjava.vscode-maven
-### markdown
 yzhang.markdown-all-in-one
-### latex
 James-Yu.latex-workshop
-### others
 streetsidesoftware.code-spell-checker
 VisualStudioExptTeam.vscodeintellicode
-
+redhat.ansible
 
 #############
 ## theming ##
@@ -34,11 +24,9 @@ equinusocio.vsc-material-theme-icons
 PKief.material-product-icons
 s3gf4ult.monokai-vibrant
 
-
 #############
 ## add-ons ##
 #############
-fabiospampinato.vscode-open-in-application
 alefragnani.project-manager
 stkb.rewrap
 
