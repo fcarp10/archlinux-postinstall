@@ -24,11 +24,12 @@ equinusocio.vsc-material-theme-icons
 PKief.material-product-icons
 s3gf4ult.monokai-vibrant
 
-#############
-## add-ons ##
-#############
+###########
+## utils ##
+###########
 alefragnani.project-manager
 stkb.rewrap
+esbenp.prettier-vscode
 
 
 
