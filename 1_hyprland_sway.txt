@@ -1,4 +1,5 @@
-sway
+hyprland
+# sway
 swaybg
 waybar
 swaylock
@@ -7,10 +8,10 @@ wofi
 xdg-desktop-portal-wlr
 xdg-desktop-portal-gtk
 mako
-greetd
-greetd-regreet
-wob
-sworkstyle
+autologin
+workstyle
 nemo
 nemo-fileroller
 tumbler
+wob
+

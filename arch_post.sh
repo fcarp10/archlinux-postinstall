@@ -50,8 +50,7 @@ OPTIONS:
 -bb \t Installs bluetooth
 -bl \t Installs laptop
 -bn \t Installs network
--s \t Installs sway
--hp \t Installs hyprland
+-hs \t Installs hyprland/sway
 -a \t Installs apps
 -ae \t Installs apps extra
 -ac \t Installs cli
@@ -114,19 +113,10 @@ while [ "$1" != "" ]; do
         install_package 0_network.txt
         log "INFO" "done"
         ;;
-    -s)
-        install_package 1_sway.txt
-        log "INFO" "enabling greetd service..."
-        sudo cp -R desktop/etc/greetd /etc/
-        sudo cp desktop/usr/local/bin/sway-run /usr/local/bin/
-        sudo systemctl enable greetd.service -f
-        log "INFO" "enabling wob service..."
-        systemctl enable --now --user wob.socket        
-        log "INFO" "done"
-        ;;
-    -hp)
-        install_package 1_hyprland.txt
+    -hs)
+        install_package 1_hyprland_sway.txt
         sudo cp desktop/usr/local/bin/hypr-run /usr/local/bin/
+        sudo cp desktop/usr/local/bin/sway-run /usr/local/bin/
         log "INFO" "enabling wob service..."
         systemctl enable --now --user wob.socket
         log "INFO" "enabling autologin service..."
