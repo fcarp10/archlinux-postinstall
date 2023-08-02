@@ -1,9 +1,10 @@
 mullvad-browser-bin
 signal-desktop
 newsflash
-syncthing
+# syncthing
 transmission-gtk
 mullvad-vpn-bin
+drawing
 shotwell
 amberol
 kooha

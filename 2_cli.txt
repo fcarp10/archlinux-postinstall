@@ -32,8 +32,8 @@ tealdeer
 git-delta
 wget
 lazygit
-nmap
 yt-dlp
 mpv
 tgpt
+xtermcontrol
 
