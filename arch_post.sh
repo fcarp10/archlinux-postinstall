@@ -202,7 +202,7 @@ while [ "$1" != "" ]; do
         sudo cp desktop/usr/local/bin/nitch /usr/local/bin/
         log "INFO" "done"
         log "INFO" "changing papirus folder theme..."
-        papirus-folders -C yaru
+        papirus-folders -C cat-latte-maroon
         log "INFO" "setting up docker..."
         sudo usermod -aG docker "$USER"
         newgrp docker

@@ -1,5 +1,5 @@
-papirus-folders
 papirus-icon-theme
+papirus-folders-catppuccin-git
 adw-gtk3
 breezex-cursor-theme
 ttf-roboto
