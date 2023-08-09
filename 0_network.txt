@@ -5,3 +5,4 @@ nm-connection-editor
 opensnitch
 python-qt-material
 nmap
+waypipe

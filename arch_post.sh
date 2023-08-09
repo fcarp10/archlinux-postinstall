@@ -103,8 +103,6 @@ while [ "$1" != "" ]; do
         log "INFO" "installing fusuma..."
         sudo gpasswd -a $USER input
         sudo gem install --no-user-install fusuma
-        log "INFO" "enabling ydotool..."
-        systemctl enable --now --user ydotool
         log "INFO" "adding easyeffects pressets"
         bash -c "$(curl -fsSL https://raw.githubusercontent.com/JackHack96/EasyEffects-Presets/master/install.sh)"
         log "INFO" "done"
@@ -192,7 +190,7 @@ while [ "$1" != "" ]; do
         sudo cp desktop/usr/local/bin/nitch /usr/local/bin/
         log "INFO" "done"
         log "INFO" "changing papirus folder theme..."
-        papirus-folders -C yaru
+        papirus-folders -C cat-latte-maroon
         log "INFO" "setting up docker..."
         sudo usermod -aG docker "$USER"
         newgrp docker
