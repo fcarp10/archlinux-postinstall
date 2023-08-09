@@ -6,6 +6,7 @@ texlive-fontsextra
 texlive-bibtexextra
 texlive-mathscience
 texlive-publishers
+texlive-langgerman
 ttf-ms-win10-auto
 urw-arial
 drawio-desktop-bin
