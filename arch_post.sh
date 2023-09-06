@@ -202,7 +202,7 @@ while [ "$1" != "" ]; do
     -cd)
         log "INFO" "pulling dotfiles... please wait"
         echo "alias gdots='git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'" >>$HOME/.bashrc
-        git clone --bare git@github.com:fcarp10/dotfiles.git $HOME/.dotfiles
+        git clone --bare https://github.com/fcarp10/dotfiles.git $HOME/.dotfiles
         source $HOME/.bashrc
         gdots reset --hard
         gdots checkout
