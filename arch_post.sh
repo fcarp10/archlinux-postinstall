@@ -113,8 +113,8 @@ while [ "$1" != "" ]; do
         ;;
     -hs)
         install_package 1_hyprland_sway.txt
-        sudo cp desktop/usr/local/bin/hypr-run /usr/local/bin/
-        sudo cp desktop/usr/local/bin/sway-run /usr/local/bin/
+        sudo cp usr/local/bin/hypr-run /usr/local/bin/
+        sudo cp usr/local/bin/sway-run /usr/local/bin/
         log "INFO" "enabling wob service..."
         systemctl enable --now --user wob.socket
         log "INFO" "enabling autologin service..."
@@ -182,12 +182,12 @@ while [ "$1" != "" ]; do
         git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
         git clone https://github.com/marlonrichert/zsh-autocomplete ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autocomplete
         log "INFO" "generating locale..."
-        sudo cp desktop/etc/locale.gen /etc/
+        sudo cp etc/locale.gen /etc/
         sudo locale-gen
         log "INFO" "copying pacman conf..."
-        sudo cp desktop/etc/pacman.conf /etc/pacman.conf
+        sudo cp etc/pacman.conf /etc/pacman.conf
         log "INFO" "copying nitch..."
-        sudo cp desktop/usr/local/bin/nitch /usr/local/bin/
+        sudo cp usr/local/bin/nitch /usr/local/bin/
         log "INFO" "done"
         log "INFO" "changing papirus folder theme..."
         papirus-folders -C cat-latte-maroon

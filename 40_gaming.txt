@@ -36,5 +36,5 @@ usb_modeswitch
 ############
 #### VR ####
 ############
-alvr-git
+alvr
 sidequest-bin
