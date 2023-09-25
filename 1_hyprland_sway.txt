@@ -9,7 +9,7 @@ xdg-desktop-portal-wlr
 xdg-desktop-portal-gtk
 mako
 autologin
-workstyle
+hyprland-autoname-workspaces-git
 nemo
 nemo-fileroller
 nemo-emblems

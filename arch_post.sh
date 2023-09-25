@@ -115,6 +115,8 @@ while [ "$1" != "" ]; do
         install_package 1_hyprland_sway.txt
         sudo cp usr/local/bin/hypr-run /usr/local/bin/
         sudo cp usr/local/bin/sway-run /usr/local/bin/
+        log "INFO" "enabling hyprland-autoname-workspaces service..."
+        systemctl --user enable --now hyprland-autoname-workspaces.service
         log "INFO" "enabling wob service..."
         systemctl enable --now --user wob.socket
         log "INFO" "enabling autologin service..."
