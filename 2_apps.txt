@@ -1,5 +1,5 @@
 firefox
-brave-bin
+chromium
 ferdium-bin
 thunderbird
 thunderbird-dark-reader
