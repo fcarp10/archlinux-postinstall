@@ -35,4 +35,5 @@ lazygit
 yt-dlp
 mpv
 xtermcontrol
+gvfs-mtp
 
