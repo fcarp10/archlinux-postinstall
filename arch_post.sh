@@ -117,8 +117,8 @@ while [ "$1" != "" ]; do
         sudo cp usr/local/bin/sway-run /usr/local/bin/
         log "INFO" "enabling hyprland-autoname-workspaces service..."
         systemctl --user enable --now hyprland-autoname-workspaces.service
-        log "INFO" "enabling wob service..."
-        systemctl enable --now --user wob.socket
+        log "INFO" "enabling swayosd service..."
+        sudo systemctl enable --now swayosd-libinput-backend.service
         log "INFO" "enabling autologin service..."
         sudo systemctl enable autologin
         log "WARN" "remember to edit user and command in /usr/lib/systemd/system/autologin.service"      

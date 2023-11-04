@@ -15,5 +15,6 @@ nemo-fileroller
 nemo-emblems
 nemo-terminal
 tumbler
-wob
+swayosd-git
+cliphist
 
