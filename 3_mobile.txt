@@ -1,0 +1,22 @@
+nebula
+firefox
+# mobile-config-firefox
+# epiphany
+geary
+celluloid
+eog
+amberol
+evince-mobile
+gnome-podcasts
+gnome-sound-recorder
+gnome-text-editor
+gnome-keyring
+gnome-todo
+gnome-weather
+polkit-gnome
+dialect
+mousai
+whatip
+newsflash
+fractal
+flare

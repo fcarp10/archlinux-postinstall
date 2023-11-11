@@ -10,3 +10,4 @@ evince-no-gnome
 gnome-text-editor
 baobab
 gnome-disk-utility
+cameractrls
