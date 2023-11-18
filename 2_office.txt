@@ -10,3 +10,5 @@ texlive-langgerman
 ttf-ms-win10-auto
 urw-arial
 drawio-desktop-bin
+xournalpp
+
