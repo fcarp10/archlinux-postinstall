@@ -2,8 +2,8 @@ papirus-icon-theme
 papirus-folders-catppuccin-git
 adw-gtk3
 breezex-cursor-theme
+otf-font-awesome
 ttf-roboto
 ttf-roboto-mono
-otf-font-awesome
-ttf-meslo-nerd-font-powerlevel10k
+ttf-roboto-mono-nerd
 ttf-jetbrains-mono-nerd
