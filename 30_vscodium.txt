@@ -5,7 +5,9 @@ foxundermoon.shell-format
 timonwong.shellcheck
 golang.go
 ms-python.python
+ms-python.isort
 ms-vscode.cpptools
+ms-python.black-formatter
 platformio.platformio-ide
 redhat.java
 vscjava.vscode-java-debug
@@ -13,16 +15,18 @@ vscjava.vscode-java-test
 vscjava.vscode-maven
 yzhang.markdown-all-in-one
 James-Yu.latex-workshop
+nvarner.typst-lsp
 streetsidesoftware.code-spell-checker
 VisualStudioExptTeam.vscodeintellicode
 redhat.ansible
+redhat.vscode-yaml
 
 #############
 ## theming ##
 #############
 equinusocio.vsc-material-theme-icons
 PKief.material-product-icons
-s3gf4ult.monokai-vibrant
+DaltonMenezes.aura-theme
 
 ###########
 ## utils ##

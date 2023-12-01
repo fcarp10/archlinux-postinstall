@@ -1,5 +1,6 @@
 firefox
 chromium
+librewolf-bin
 ferdium-bin
 thunderbird
 thunderbird-dark-reader
