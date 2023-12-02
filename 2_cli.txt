@@ -5,7 +5,6 @@ bash-completion
 gnome-keyring
 polkit-gnome
 curl
-jq
 downgrade
 duf
 gvfs
@@ -37,3 +36,10 @@ mpv
 xtermcontrol
 gvfs-mtp
 dosfstools
+lazydocker
+yazi
+unarchiver
+jq
+fd
+ripgrep
+fzf
