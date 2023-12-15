@@ -198,6 +198,8 @@ while [ "$1" != "" ]; do
         newgrp docker
         log "INFO" "setting alacritty default for nemo..."
         gsettings set org.cinnamon.desktop.default-applications.terminal exec alacritty
+        log "INFO" "setting nemo default file manager"
+        xdg-mime default nemo.desktop inode/directory
         log "INFO" "adding virtualenv to pyenv..."
         git clone https://github.com/pyenv/pyenv-virtualenv.git "$(pyenv root)"/plugins/pyenv-virtualenv
         ;;

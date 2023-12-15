@@ -1,6 +1,6 @@
 hyprland
 # sway
-swaybg
+# swaybg
 waybar
 swaylock
 swayidle
@@ -17,4 +17,4 @@ nemo-terminal
 tumbler
 swayosd-git
 cliphist
-
+swww
