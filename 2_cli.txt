@@ -43,3 +43,6 @@ jq
 fd
 ripgrep
 fzf
+
+
+

@@ -6,3 +6,5 @@ opensnitch
 python-qt-material
 nmap
 waypipe
+dnsmasq
+
