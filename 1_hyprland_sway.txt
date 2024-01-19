@@ -13,8 +13,9 @@ hyprland-autoname-workspaces-git
 nemo
 nemo-fileroller
 nemo-emblems
-nemo-terminal
 tumbler
+sassc
 swayosd-git
 cliphist
 swww
+

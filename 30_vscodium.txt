@@ -8,14 +8,14 @@ ms-python.python
 ms-python.isort
 ms-vscode.cpptools
 ms-python.black-formatter
-platformio.platformio-ide
+# platformio.platformio-ide
 redhat.java
 vscjava.vscode-java-debug
 vscjava.vscode-java-test
 vscjava.vscode-maven
 yzhang.markdown-all-in-one
 James-Yu.latex-workshop
-nvarner.typst-lsp
+# nvarner.typst-lsp
 streetsidesoftware.code-spell-checker
 VisualStudioExptTeam.vscodeintellicode
 redhat.ansible

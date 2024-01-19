@@ -1,5 +1,5 @@
 firefox
-chromium
+brave-bin
 librewolf-bin
 ferdium-bin
 thunderbird
