@@ -3,7 +3,7 @@ vscodium-bin-marketplace
 jdk-openjdk
 pyenv
 docker
-docker-buildx
+docker-compose
 neovim
 vim-plug
 ansible

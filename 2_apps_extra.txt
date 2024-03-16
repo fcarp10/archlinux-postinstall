@@ -13,3 +13,12 @@ upscaler
 converter
 gnome-disk-utility
 piper
+### LLMs ###
+ollama
+oatmeal
+### LLMs (GPU acceleration) ###
+rocm-hip-sdk
+rocm-opencl-sdk
+clblast
+
+
