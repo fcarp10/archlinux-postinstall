@@ -1,55 +1,48 @@
-#########
-## dev ##
-#########
+##### shell #####
 foxundermoon.shell-format
 timonwong.shellcheck
+
+##### go #####
 golang.go
+
+##### python #####
 ms-python.python
 ms-python.isort
-ms-vscode.cpptools
 ms-python.black-formatter
+
+##### cpp #####
+ms-vscode.cpptools
 platformio.platformio-ide
+
+##### java #####
 redhat.java
 vscjava.vscode-java-debug
 vscjava.vscode-java-test
 vscjava.vscode-maven
+
+##### markdown #####
 yzhang.markdown-all-in-one
+
+##### latex #####
 James-Yu.latex-workshop
-nvarner.typst-lsp
-streetsidesoftware.code-spell-checker
-VisualStudioExptTeam.vscodeintellicode
+# nvarner.typst-lsp
+
+##### yaml #####
 redhat.ansible
 redhat.vscode-yaml
 
-#############
-## theming ##
-#############
-equinusocio.vsc-material-theme-icons
-PKief.material-product-icons
-DaltonMenezes.aura-theme
+##### helpers #####
+streetsidesoftware.code-spell-checker
+VisualStudioExptTeam.vscodeintellicode
+continue.continue
 
-###########
-## utils ##
-###########
+##### utils #####
 alefragnani.project-manager
 stkb.rewrap
 esbenp.prettier-vscode
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+##### theming #####
+equinusocio.vsc-material-theme-icons
+PKief.material-product-icons
 
 

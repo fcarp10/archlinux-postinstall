@@ -103,8 +103,6 @@ while [ "$1" != "" ]; do
         log "INFO" "installing fusuma..."
         sudo gpasswd -a $USER input
         sudo gem install --no-user-install fusuma
-        log "INFO" "adding easyeffects pressets"
-        bash -c "$(curl -fsSL https://raw.githubusercontent.com/JackHack96/EasyEffects-Presets/master/install.sh)"
         log "INFO" "done"
         ;;
     -bn)
@@ -202,6 +200,8 @@ while [ "$1" != "" ]; do
         xdg-mime default nemo.desktop inode/directory application/x-gnome-saved-search
         log "INFO" "adding virtualenv to pyenv..."
         git clone https://github.com/pyenv/pyenv-virtualenv.git "$(pyenv root)"/plugins/pyenv-virtualenv
+        log "INFO" "change default shell"
+        chsh -s /bin/zsh "$USER"
         ;;
     -cd)
         log "INFO" "pulling dotfiles... please wait"
