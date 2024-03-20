@@ -199,7 +199,7 @@ while [ "$1" != "" ]; do
         log "INFO" "setting alacritty default for nemo..."
         gsettings set org.cinnamon.desktop.default-applications.terminal exec alacritty
         log "INFO" "setting nemo default file manager"
-        xdg-mime default nemo.desktop inode/directory
+        xdg-mime default nemo.desktop inode/directory application/x-gnome-saved-search
         log "INFO" "adding virtualenv to pyenv..."
         git clone https://github.com/pyenv/pyenv-virtualenv.git "$(pyenv root)"/plugins/pyenv-virtualenv
         ;;

@@ -38,11 +38,13 @@ gvfs-mtp
 dosfstools
 lazydocker
 yazi
+ueberzug
 unarchiver
 jq
 fd
 ripgrep
 fzf
-
+ollama
+oatmeal
 
 

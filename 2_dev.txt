@@ -9,4 +9,5 @@ vim-plug
 ansible
 python-pympress
 go
+knative-client
 
