@@ -1,3 +1,7 @@
+nemo
+nemo-fileroller
+nemo-emblems
+tumbler
 firefox
 brave-bin
 librewolf-bin

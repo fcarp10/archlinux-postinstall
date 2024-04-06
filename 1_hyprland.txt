@@ -1,0 +1,14 @@
+autologin
+hyprland
+xdg-desktop-portal-wlr
+xdg-desktop-portal-gtk
+waybar
+mako
+wofi
+swww
+hyprland-autoname-workspaces-git
+hyprpicker
+hyprlock
+swayosd-git
+
+
