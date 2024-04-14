@@ -19,6 +19,7 @@ protonplus
 cabextract
 cartridges
 heroic-games-launcher-bin
+mangohud
 
 ###################
 ##### openrgb #####
