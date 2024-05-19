@@ -1,5 +1,4 @@
 alacritty
-alacritty-themes
 zsh
 bash-completion
 gnome-keyring
@@ -16,12 +15,10 @@ grim
 slurp
 pdftk
 pdfpc
-cmatrix
 exfatprogs
 rsync
 ncdu
 btop
-ctop
 fwupd
 nano
 lsd
@@ -31,7 +28,6 @@ tealdeer
 git-delta
 wget
 lazygit
-yt-dlp
 mpv
 xtermcontrol
 gvfs-mtp
@@ -45,6 +41,8 @@ fd
 ripgrep
 fzf
 ollama
-oatmeal
-
+### LLMs (GPU acceleration) ###
+# rocm-hip-sdk
+# rocm-opencl-sdk
+# clblast
 

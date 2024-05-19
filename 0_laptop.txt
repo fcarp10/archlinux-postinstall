@@ -2,7 +2,6 @@ auto-cpufreq
 brightnessctl
 thermald
 poweralertd
-# easyeffects
 libinput
 ydotool
 ruby

@@ -50,7 +50,7 @@ OPTIONS:
 -bb \t Installs bluetooth
 -bl \t Installs laptop
 -bn \t Installs network
--hs \t Installs hyprland/sway
+-hs \t Installs hyprland
 -a \t Installs apps
 -ae \t Installs apps extra
 -ac \t Installs cli
@@ -110,9 +110,8 @@ while [ "$1" != "" ]; do
         log "INFO" "done"
         ;;
     -hs)
-        install_package 1_hyprland_sway.txt
+        install_package 1_hyprland.txt
         sudo cp usr/local/bin/hypr-run /usr/local/bin/
-        sudo cp usr/local/bin/sway-run /usr/local/bin/
         log "INFO" "enabling hyprland-autoname-workspaces service..."
         systemctl --user enable --now hyprland-autoname-workspaces.service
         log "INFO" "enabling swayosd service..."

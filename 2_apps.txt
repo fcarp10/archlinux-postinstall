@@ -8,12 +8,15 @@ librewolf-bin
 ferdium-bin
 thunderbird
 thunderbird-dark-reader
+signal-desktop
 nextcloud-client
 freetube-bin
+newsflash
 file-roller
 evince-no-gnome
 gnome-text-editor
 baobab
 gnome-disk-utility
 cameractrls
+mullvad-vpn-bin
 

@@ -1,10 +1,4 @@
-mullvad-browser-bin
-signal-desktop
-newsflash
-# syncthing
-transmission-gtk
 stremio
-mullvad-vpn-bin
 drawing
 shotwell
 amberol
@@ -12,14 +6,6 @@ kooha
 guvcview
 upscaler
 converter
-gnome-disk-utility
 piper
-### LLMs ###
-ollama
-oatmeal
-### LLMs (GPU acceleration) ###
-rocm-hip-sdk
-rocm-opencl-sdk
-clblast
-
+drawio-desktop-bin
 

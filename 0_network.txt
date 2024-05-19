@@ -2,9 +2,7 @@ nebula
 remmina
 freerdp
 nm-connection-editor
-opensnitch
-python-qt-material
 nmap
-waypipe
-dnsmasq
+# waypipe
+# dnsmasq
 
