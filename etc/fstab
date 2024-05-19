@@ -1,9 +1,0 @@
-# Static information about the filesystems.
-# See fstab(5) for details.
-
-# <file system> <dir> <type> <options> <dump> <pass>
-
-tmpfs /tmp tmpfs defaults,noatime,mode=1777 0 0
-
-UUID=BC44-AC93      	/efi      	vfat      	rw,relatime,fmask=0022,dmask=0022,codepage=437,iocharset=ascii,shortname=mixed,utf8,errors=remount-ro	0 2
-/efi/EFI/arch /boot none defaults,bind 0 0
