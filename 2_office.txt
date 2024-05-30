@@ -1,11 +1,13 @@
 libreoffice-fresh
 hunspell
 hunspell-en_us
-texlive-latexextra
-texlive-fontsextra
-texlive-bibtexextra
-texlive-mathscience
-texlive-publishers
-texlive-langgerman
+# texlive-latexextra
+# texlive-fontsextra
+# texlive-bibtexextra
+# texlive-mathscience
+# texlive-publishers
+# texlive-langgerman
 ttf-ms-win10-auto
+tectonic
+
 

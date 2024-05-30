@@ -5,3 +5,5 @@ pinentry
 browserpass
 browserpass-chromium
 browserpass-firefox
+browserpass-librewolf
+

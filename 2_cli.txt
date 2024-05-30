@@ -40,6 +40,9 @@ jq
 fd
 ripgrep
 fzf
+kubectl
+kubecolor
+zoxide
 ollama
 ### LLMs (GPU acceleration) ###
 # rocm-hip-sdk
