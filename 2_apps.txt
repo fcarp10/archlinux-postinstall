@@ -13,7 +13,7 @@ nextcloud-client
 freetube-bin
 newsflash
 file-roller
-evince-no-gnome
+zathura-pdf-mupdf
 gnome-text-editor
 baobab
 gnome-disk-utility

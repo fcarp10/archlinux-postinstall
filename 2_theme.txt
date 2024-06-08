@@ -1,5 +1,5 @@
 papirus-icon-theme
-papirus-folders-catppuccin-git
+papirus-folders
 adw-gtk3
 breezex-cursor-theme
 otf-font-awesome

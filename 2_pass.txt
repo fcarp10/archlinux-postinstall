@@ -6,4 +6,5 @@ browserpass
 browserpass-chromium
 browserpass-firefox
 browserpass-librewolf
+wofi-pass
 
