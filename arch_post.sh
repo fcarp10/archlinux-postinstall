@@ -180,8 +180,9 @@ while [ "$1" != "" ]; do
         log "INFO" "generating locale..."
         sudo cp etc/locale.gen /etc/
         log "INFO" "copying autologin conf..."
+        sudo mkdir /etc/systemd/system/getty@tty1.service.d
         sudo cp etc/systemd/system/getty@tty1.service.d/autologin.conf
-        log "WARN" "remember to edit user in etc/systemd/system/getty@tty1.service.d/autologin.conf" 
+        log "WARN" "remember to edit user in /etc/systemd/system/getty@tty1.service.d/autologin.conf" 
         sudo locale-gen
         log "INFO" "copying pacman conf..."
         sudo cp etc/pacman.conf /etc/pacman.conf
