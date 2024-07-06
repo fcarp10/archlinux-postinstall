@@ -115,10 +115,7 @@ while [ "$1" != "" ]; do
         log "INFO" "enabling hyprland-autoname-workspaces service..."
         systemctl --user enable --now hyprland-autoname-workspaces.service
         log "INFO" "enabling swayosd service..."
-        sudo systemctl enable --now swayosd-libinput-backend.service
-        log "INFO" "enabling autologin service..."
-        sudo systemctl enable autologin
-        log "WARN" "remember to edit user and command in /usr/lib/systemd/system/autologin.service"      
+        sudo systemctl enable --now swayosd-libinput-backend.service     
         log "INFO" "done"
         ;;
     -a)
@@ -182,6 +179,9 @@ while [ "$1" != "" ]; do
         git clone https://github.com/marlonrichert/zsh-autocomplete ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autocomplete
         log "INFO" "generating locale..."
         sudo cp etc/locale.gen /etc/
+        log "INFO" "copying autologin conf..."
+        sudo cp etc/systemd/system/getty@tty1.service.d/autologin.conf
+        log "WARN" "remember to edit user in etc/systemd/system/getty@tty1.service.d/autologin.conf" 
         sudo locale-gen
         log "INFO" "copying pacman conf..."
         sudo cp etc/pacman.conf /etc/pacman.conf

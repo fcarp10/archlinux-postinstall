@@ -1,13 +1,14 @@
+go
+pyenv
+jdk-openjdk
 vscodium-bin
 vscodium-bin-marketplace
-jdk-openjdk
-pyenv
 docker
 docker-compose
 neovim
 vim-plug
 ansible
-python-pympress
-go
-knative-client
+#python-pympress
+
+
 
