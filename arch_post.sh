@@ -157,6 +157,8 @@ while [ "$1" != "" ]; do
         ;;
     -g)
         install_package 40_gaming.txt
+        sudo modprobe i2c-dev
+        sudo modprobe i2c-piix4
         ;;
     -vs)
         log "INFO" "installing vscodium extensions... please wait"
