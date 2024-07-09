@@ -183,7 +183,7 @@ while [ "$1" != "" ]; do
         sudo cp etc/locale.gen /etc/
         log "INFO" "copying autologin conf..."
         sudo mkdir /etc/systemd/system/getty@tty1.service.d
-        sudo cp etc/systemd/system/getty@tty1.service.d/autologin.conf
+        sudo cp etc/systemd/system/getty@tty1.service.d/autologin.conf /etc/systemd/system/getty@tty1.service.d/
         log "WARN" "remember to edit user in /etc/systemd/system/getty@tty1.service.d/autologin.conf" 
         sudo locale-gen
         log "INFO" "copying pacman conf..."
