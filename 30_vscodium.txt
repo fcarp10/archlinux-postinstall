@@ -34,15 +34,17 @@ redhat.vscode-yaml
 ##### helpers #####
 streetsidesoftware.code-spell-checker
 VisualStudioExptTeam.vscodeintellicode
-continue.continue
+# continue.continue
 
 ##### utils #####
 alefragnani.project-manager
 stkb.rewrap
 esbenp.prettier-vscode
+jebbs.plantuml
 
 ##### theming #####
 equinusocio.vsc-material-theme-icons
 PKief.material-product-icons
+azemoh.one-monokai
 
 

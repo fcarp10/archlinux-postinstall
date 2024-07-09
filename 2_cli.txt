@@ -12,6 +12,8 @@ unrar
 p7zip
 keychain
 grim
+imagemagick
+graphviz
 slurp
 pdftk
 pdfpc
