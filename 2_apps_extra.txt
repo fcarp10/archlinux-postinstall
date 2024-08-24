@@ -1,4 +1,5 @@
 stremio
+hypnotix
 drawing
 shotwell
 amberol
