@@ -43,9 +43,10 @@ fd
 ripgrep
 fzf
 kubectl
-kubecolor
+# kubecolor
 zoxide
 ollama
+imagemagick
 ### LLMs (GPU acceleration) ###
 # rocm-hip-sdk
 # rocm-opencl-sdk

@@ -151,8 +151,7 @@ while [ "$1" != "" ]; do
     -k)
         install_package 20_kvm.txt
         log "INFO" "enabling libvirtd service..."
-        sudo systemctl enable libvirtd.service
-        sudo systemctl start libvirtd.service
+        sudo systemctl enable --now libvirtd.service
         log "INFO" "done"
         ;;
     -g)
