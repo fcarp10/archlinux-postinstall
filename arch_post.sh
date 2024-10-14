@@ -187,9 +187,6 @@ while [ "$1" != "" ]; do
         sudo locale-gen
         log "INFO" "copying pacman conf..."
         sudo cp etc/pacman.conf /etc/pacman.conf
-        log "INFO" "copying nitch..."
-        sudo cp usr/local/bin/nitch /usr/local/bin/
-        log "INFO" "done"
         log "INFO" "changing papirus folder theme..."
         papirus-folders -C red
         log "INFO" "setting up docker..."
