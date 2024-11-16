@@ -112,8 +112,6 @@ while [ "$1" != "" ]; do
     -hs)
         install_package 1_hyprland.txt
         sudo cp usr/local/bin/hypr-run /usr/local/bin/
-        log "INFO" "enabling hyprland-autoname-workspaces service..."
-        systemctl --user enable --now hyprland-autoname-workspaces.service
         log "INFO" "enabling swayosd service..."
         sudo systemctl enable --now swayosd-libinput-backend.service     
         log "INFO" "done"
