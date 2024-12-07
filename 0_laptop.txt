@@ -4,4 +4,4 @@ thermald
 poweralertd
 libinput
 ydotool
-ruby
+ruby-fusuma

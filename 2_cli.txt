@@ -43,7 +43,7 @@ fd
 ripgrep
 fzf
 kubectl
-kubecolor
+kubelogin
 zoxide
 ollama
 ### LLMs (GPU acceleration) ###

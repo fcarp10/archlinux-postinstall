@@ -100,9 +100,6 @@ while [ "$1" != "" ]; do
         sudo systemctl enable auto-cpufreq.service
         log "INFO" "enabling thermald service..."
         sudo systemctl enable thermald.service
-        log "INFO" "installing fusuma..."
-        sudo gpasswd -a $USER input
-        sudo gem install --no-user-install fusuma
         log "INFO" "done"
         ;;
     -bn)
