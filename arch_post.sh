@@ -109,8 +109,6 @@ while [ "$1" != "" ]; do
     -hs)
         install_package 1_hyprland.txt
         sudo cp usr/local/bin/hypr-run /usr/local/bin/
-        log "INFO" "enabling hyprland-autoname-workspaces service..."
-        systemctl --user enable --now hyprland-autoname-workspaces.service
         log "INFO" "enabling swayosd service..."
         sudo systemctl enable --now swayosd-libinput-backend.service     
         log "INFO" "done"
@@ -148,8 +146,7 @@ while [ "$1" != "" ]; do
     -k)
         install_package 20_kvm.txt
         log "INFO" "enabling libvirtd service..."
-        sudo systemctl enable libvirtd.service
-        sudo systemctl start libvirtd.service
+        sudo systemctl enable --now libvirtd.service
         log "INFO" "done"
         ;;
     -g)
@@ -185,9 +182,6 @@ while [ "$1" != "" ]; do
         sudo locale-gen
         log "INFO" "copying pacman conf..."
         sudo cp etc/pacman.conf /etc/pacman.conf
-        log "INFO" "copying nitch..."
-        sudo cp usr/local/bin/nitch /usr/local/bin/
-        log "INFO" "done"
         log "INFO" "changing papirus folder theme..."
         papirus-folders -C red
         log "INFO" "setting up docker..."

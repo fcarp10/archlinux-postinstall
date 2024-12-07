@@ -25,7 +25,6 @@ fwupd
 nano
 lsd
 bat
-thefuck
 tealdeer
 git-delta
 wget
@@ -44,8 +43,12 @@ ripgrep
 fzf
 kubectl
 kubelogin
+fastfetch
 zoxide
 ollama
+imagemagick
+yubikey-full-disk-encryption
+winetricks
 ### LLMs (GPU acceleration) ###
 # rocm-hip-sdk
 # rocm-opencl-sdk

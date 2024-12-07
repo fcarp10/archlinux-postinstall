@@ -1,4 +1,5 @@
-amdvlk
+vulkan-radeon
+lib32-vulkan-radeon
 steam
 heroic-games-launcher-bin
 mangohud

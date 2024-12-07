@@ -13,10 +13,9 @@ nextcloud-client
 freetube-bin
 newsflash
 file-roller
-zathura-pdf-mupdf
 gnome-text-editor
 baobab
 gnome-disk-utility
 cameractrls
 mullvad-vpn-bin
-
+junction
