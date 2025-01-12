@@ -1,12 +1,12 @@
 stremio
 hypnotix
-drawing
 shotwell
+folio
+celluloid
 amberol
 kooha
 guvcview
-upscaler
 converter
 piper
 drawio-desktop-bin
-
+newsflash
