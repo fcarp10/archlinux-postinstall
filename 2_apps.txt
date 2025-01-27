@@ -1,18 +1,20 @@
 nemo
 nemo-fileroller
 nemo-emblems
+nemo-preview
 tumbler
 firefox
+chromium
 brave-bin
 librewolf-bin
 zen-browser-bin
 ferdium-bin
+loupe
 thunderbird
 thunderbird-dark-reader
 signal-desktop
 nextcloud-client
 freetube-bin
-newsflash
 file-roller
 gnome-text-editor
 baobab
@@ -20,3 +22,5 @@ gnome-disk-utility
 cameractrls
 mullvad-vpn-bin
 junction
+
+

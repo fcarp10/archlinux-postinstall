@@ -1,6 +1,6 @@
 papirus-icon-theme
 papirus-folders
-adw-gtk3
+adw-gtk-theme
 breezex-cursor-theme
 otf-font-awesome
 ttf-roboto
