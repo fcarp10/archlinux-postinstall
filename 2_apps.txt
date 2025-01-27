@@ -5,6 +5,7 @@ tumbler
 firefox
 brave-bin
 librewolf-bin
+zen-browser-bin
 ferdium-bin
 thunderbird
 thunderbird-dark-reader
