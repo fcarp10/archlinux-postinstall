@@ -48,7 +48,8 @@ zoxide
 ollama
 imagemagick
 yubikey-full-disk-encryption
-winetricks
+isd
+logiops
 ### LLMs (GPU acceleration) ###
 # rocm-hip-sdk
 # rocm-opencl-sdk

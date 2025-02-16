@@ -7,6 +7,5 @@ amberol
 kooha
 guvcview
 converter
-piper
 drawio-desktop-bin
 newsflash
