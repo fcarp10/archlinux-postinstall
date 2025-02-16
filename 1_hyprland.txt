@@ -8,5 +8,5 @@ hyprpaper
 hyprpicker
 hyprlock
 swayosd-git
-
+hyprgui-bin
 

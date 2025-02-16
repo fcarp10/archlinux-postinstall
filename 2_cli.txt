@@ -46,6 +46,7 @@ kubelogin
 fastfetch
 zoxide
 ollama
+oterm
 imagemagick
 yubikey-full-disk-encryption
 isd
