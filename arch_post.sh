@@ -108,7 +108,7 @@ while [ "$1" != "" ]; do
         ;;
     -hs)
         install_package 1_hyprland.txt
-        sudo cp usr/local/bin/hypr-run /usr/local/bin/
+        sudo cp conf/hypr-run /usr/local/bin/
         log "INFO" "enabling swayosd service..."
         sudo systemctl enable --now swayosd-libinput-backend.service     
         log "INFO" "done"
@@ -174,14 +174,17 @@ while [ "$1" != "" ]; do
         git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
         git clone https://github.com/marlonrichert/zsh-autocomplete ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autocomplete
         log "INFO" "generating locale..."
-        sudo cp etc/locale.gen /etc/
+        sudo cp conf/locale.gen /etc/
         log "INFO" "copying autologin conf..."
         sudo mkdir /etc/systemd/system/getty@tty1.service.d
-        sudo cp etc/systemd/system/getty@tty1.service.d/autologin.conf /etc/systemd/system/getty@tty1.service.d/
-        log "WARN" "remember to edit user in /etc/systemd/system/getty@tty1.service.d/autologin.conf" 
+        sudo cp conf/autologin.conf /etc/systemd/system/getty@tty1.service.d/
+        log "WARN" "remember to edit USER in /etc/systemd/system/getty@tty1.service.d/autologin.conf" 
+        log "WARN" "remember to edit USER in /usr/lib/systemd/system/logid.service"
         sudo locale-gen
         log "INFO" "copying pacman conf..."
-        sudo cp etc/pacman.conf /etc/pacman.conf
+        sudo cp config/pacman.conf /etc/pacman.conf
+        log "INFO" "enable ssh-agent service..."
+        systemctl enable --now --user ssh-agent.service
         log "INFO" "changing papirus folder theme..."
         papirus-folders -C red
         log "INFO" "setting up docker..."

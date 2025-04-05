@@ -1,5 +1,7 @@
 #!/bin/sh
 
+# path /usr/local/bin/
+
 export EDITOR=nvim
 export VISUAL=nvim
 export PATH="$PATH:$(go env GOBIN):$(go env GOPATH)/bin"

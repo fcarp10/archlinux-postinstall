@@ -9,6 +9,7 @@ neovim
 vim-plug
 ansible
 plantuml-server
+bruno-bin
 #python-pympress
 
 

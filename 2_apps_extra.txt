@@ -1,5 +1,6 @@
 stremio
 hypnotix
+open-tv-bin
 shotwell
 folio
 celluloid
