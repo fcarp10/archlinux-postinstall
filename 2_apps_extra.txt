@@ -10,3 +10,4 @@ guvcview
 converter
 drawio-desktop-bin
 newsflash
+ledger-udev
