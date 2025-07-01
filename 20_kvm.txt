@@ -9,3 +9,4 @@ edk2-ovmf
 ebtables
 iptables-nft
 dnsmasq
+dmidecode

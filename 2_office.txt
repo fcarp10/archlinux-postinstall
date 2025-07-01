@@ -9,5 +9,6 @@ hunspell-en_us
 # texlive-langgerman
 ttf-ms-win10-auto
 tectonic
+texlive-binextra
 
 
