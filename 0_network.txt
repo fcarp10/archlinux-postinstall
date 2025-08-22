@@ -1,8 +1,8 @@
 nebula
-remmina
-freerdp
 nm-connection-editor
 nmap
+# remmina
+# freerdp
 # waypipe
 # dnsmasq
 

@@ -3,8 +3,11 @@ lib32-vulkan-radeon
 steam
 heroic-games-launcher-bin
 mangohud
-alvr
+
+##### VR #####
+# alvr (old for steamVR compatibility)
 sidequest-bin
+envision-xr-git
 
 ##### openrgb #####
 openrgb

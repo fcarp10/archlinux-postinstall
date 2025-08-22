@@ -44,13 +44,10 @@ kubectl
 kubelogin
 fastfetch
 zoxide
-ollama
 imagemagick
 yubikey-full-disk-encryption
 isd
 logiops
-### LLMs (GPU acceleration) ###
-# rocm-hip-sdk
-# rocm-opencl-sdk
-# clblast
+less
+
 

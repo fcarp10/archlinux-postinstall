@@ -3,7 +3,7 @@ nemo-fileroller
 nemo-emblems
 nemo-preview
 tumbler
-firefox
+# firefox
 chromium
 brave-bin
 librewolf-bin
@@ -22,5 +22,6 @@ gnome-disk-utility
 cameractrls
 mullvad-vpn-bin
 junction
-
+ollama
+# ollama-rocm
 
